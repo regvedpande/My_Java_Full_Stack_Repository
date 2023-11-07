@@ -17,7 +17,7 @@ int main() {
     } else if (mark >= 80) {
         printf("Grade: A\n");
     } else {
-        printf("Grade: Unknown\n");
+        printf("Grade: Not Known\n");
     }
 
     return 0;

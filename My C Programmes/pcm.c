@@ -15,7 +15,7 @@ int main() {
 
     average = (physics + chemistry + math) / 3.0; 
 
-    if (physics >= 50 && chemistry >= 50 && math >= 50 && average >= 60) {
+    if (physics >= 50 && chemistry >= 50 && math >= 50 || average >= 60) {
         printf("Pass\n");
     } else {
         printf("Fail\n");

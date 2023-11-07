@@ -7,10 +7,10 @@ int main ()
     sum = angle1 + angle2 + angle3;
 
     if (sum < 180) {
-    printf("It forms a triangle");} else 
-    {
+    printf("It forms a triangle")
+    }else {
     printf("It doesn't form a triangle");
-    }
+    };
 
   return 0;
 }
