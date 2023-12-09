@@ -4,7 +4,7 @@ public class ParameterisedConstructor {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ParameterisedConstructor object = new ParameterisedConstructor(52);
+		ParameterisedConstructor object = new ParameterisedConstructor(52, 35.50);
 
 	}
 	
