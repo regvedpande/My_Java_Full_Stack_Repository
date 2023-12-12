@@ -7,6 +7,7 @@ public class ThisKeyword {
 	String h; 
 	long num2;
 	char g; 
+	boolean b2;
 	
 	public String getInt(int i, int k){
 		this.p = i;
@@ -14,6 +15,14 @@ public class ThisKeyword {
 	    String s = (p+","+j);
 	    return s;
 
+	}
+	
+	private boolean getBool( boolean b) {
+		int q = 9;
+		int t = 0;
+		 b = q>t;
+		 this.b2 = b; //if it is static you can also use it without this
+		return b;
 	}
 	
 	private String getString(String s) {
@@ -50,6 +59,7 @@ public class ThisKeyword {
 		   System.out.println(k.getString("Regved"));
 		   System.out.println(k.getLong(9049874883L));
 		   System.out.println(k.getChar('A'));
+		   System.out.println(k.getBool(false));
 		   System.out.println("-----------------------------");
 	}
 	
