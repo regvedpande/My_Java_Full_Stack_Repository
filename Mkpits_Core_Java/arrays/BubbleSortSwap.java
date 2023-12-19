@@ -9,7 +9,6 @@ public class BubbleSortSwap {
     public static void main(String[] args) throws NumberFormatException, IOException {
    
         int nums[] = new int[5];
-        
      
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -21,8 +20,9 @@ public class BubbleSortSwap {
             nums[i] = Integer.parseInt(reader.readLine());
         }
         
-
+       //controls the unsorted range
         for (int i = 0; i < nums.length - 1; i++) {
+        	//checks and swaps within that unsorted range
             for (int j = 0; j < nums.length - i - 1; j++) {
                 if (nums[j] > nums[j + 1]) {
                     int temp = nums[j];
