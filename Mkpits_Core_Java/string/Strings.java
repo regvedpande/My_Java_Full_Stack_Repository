@@ -63,29 +63,53 @@ package com.mkpits.string;
 - Explore the Java documentation for more details and advanced features.
 */
 
-public class Strings {
+public class StringsExplain {
 
 	public static void main(String[] args) {
 
+		StringsExplain explain = new StringsExplain();
+		explain.getAccessCharacters();
+		explain.getConcatenation();
+		explain.getSubstringExtraction();
+		explain.getCharactersandSubstrings();
+		explain.getComparison();
+		explain.getConversion();
+		explain.getWhitespace();
+		explain.getSentenceReplace();
+		explain.getStringWords();
+	     
+	}
+
+
+	private void getAccessCharacters() {
 		// Accessing Characters
 		// Strings are sequences of characters, each with an index starting from 0.
 		String name = "Regved";
 		char firstLetter = name.charAt(2);  // Access the character at index 2 ('e')
 		System.out.println(firstLetter);
 
+	}
+
+	private void getConcatenation() {
 		// Concatenation
 		// Combine strings using the + operator or the concat() method.
 		String myname = "Regved";
 		String mysirname = "Pande";
 		String fullname = "My Name is" + myname + mysirname; // Combine three strings
 		System.out.println(fullname);
+	}
 
+	
+
+	private void getSubstringExtraction() {
 		// Substring Extraction
 		// Extract a portion of a string using substring(start, end).
 		String sentence = "Java is Object Oriented Programming Language";
 		String rangelimit = sentence.substring(1, 18);  // Extract characters from index 1 to 17
 		System.out.println(rangelimit);
-
+	}
+	
+	private void getCharactersandSubstrings() {
 		// Finding Characters and Substrings
 		// Find the index of a character/substring or check for its presence.
 		String phrase = "Java is a great Programming Language";
@@ -96,6 +120,9 @@ public class Strings {
 		boolean range = phrase.contains("great");  // Check if "great" is present
 		System.out.println(range);
 
+	}
+
+	private void getComparison() {
 		// Comparison
 		// Compare strings for equality using equals() or equalsIgnoreCase().
 		String halfname = "Steve";
@@ -103,32 +130,41 @@ public class Strings {
 		boolean equal = halfname.equals(completename);  // Case-sensitive comparison
 		System.out.println(equal);
 		boolean equalsIgnoreCase = halfname.equalsIgnoreCase(completename);  // Case-insensitive
+		
+	}
 
+	private void getConversion() {
 		// Case Conversion
 		// Change case using toUpperCase() or toLowerCase().
 		String namespelling = "regved pande";
 		String uppercase = namespelling.toUpperCase();  // All characters to uppercase
 		String lowercase = namespelling.toLowerCase();  // All characters to lowercase
+	}
 
+
+
+	private void getWhitespace() {
 		// Trimming Whitespace
 		// Remove leading and trailing whitespace using trim().
 		String spaceshipname = "     Millenium Falcon!      ";
 		String trimmed = spaceshipname.trim();  // Remove extra spaces
 		System.out.println(trimmed);
+		
+	}
 
+	private void getSentenceReplace() {
 		// Sentence Replace
 		// Replace parts of a string using replace(oldChar/oldString, newChar/newString).
 		String reality = "I saw a Persian black dog today";
 		String replaced = reality.replace("dog", "cat");  // Replace "dog" with "cat"
 		System.out.println(replaced);
+	}
 
+	private void getStringWords() {
 		// String Words
 		// Split a string into an array of words using split(delimiter).
 		String catbreeds = "Persian, Maine Coon, Caracal, Munchkin";
 		String[] cats = catbreeds.split(",");  // Split into an array using comma as delimiter
 		System.out.println(catbreeds);  // Note: This line prints the original string, not the array.
-
-	     
 	}
-
 }
