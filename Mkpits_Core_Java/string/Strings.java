@@ -1,5 +1,9 @@
 package com.mkpits.string;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /*
 ** Comprehensive explanation of String concepts in Java, covering essential details:**
 
@@ -65,7 +69,7 @@ package com.mkpits.string;
 
 public class StringsExplain {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		StringsExplain explain = new StringsExplain();
 		explain.getAccessCharacters();
@@ -77,15 +81,15 @@ public class StringsExplain {
 		explain.getWhitespace();
 		explain.getSentenceReplace();
 		explain.getStringWords();
-	     
-	}
+		explain.getEmptyMethod();
 
+	}
 
 	private void getAccessCharacters() {
 		// Accessing Characters
 		// Strings are sequences of characters, each with an index starting from 0.
 		String name = "Regved";
-		char firstLetter = name.charAt(2);  // Access the character at index 2 ('e')
+		char firstLetter = name.charAt(2); // Access the character at index 2 ('e')
 		System.out.println(firstLetter);
 
 	}
@@ -99,25 +103,23 @@ public class StringsExplain {
 		System.out.println(fullname);
 	}
 
-	
-
 	private void getSubstringExtraction() {
 		// Substring Extraction
 		// Extract a portion of a string using substring(start, end).
 		String sentence = "Java is Object Oriented Programming Language";
-		String rangelimit = sentence.substring(1, 18);  // Extract characters from index 1 to 17
+		String rangelimit = sentence.substring(1, 18); // Extract characters from index 1 to 17
 		System.out.println(rangelimit);
 	}
-	
+
 	private void getCharactersandSubstrings() {
 		// Finding Characters and Substrings
 		// Find the index of a character/substring or check for its presence.
 		String phrase = "Java is a great Programming Language";
-		int wordRange = phrase.indexOf('i');  // Find the first occurrence of 'i'
+		int wordRange = phrase.indexOf('i'); // Find the first occurrence of 'i'
 		System.out.println(wordRange);
-		int wordRange2 = phrase.lastIndexOf("g");  // Find the last occurrence of 'g'
+		int wordRange2 = phrase.lastIndexOf("g"); // Find the last occurrence of 'g'
 		System.out.println(wordRange2);
-		boolean range = phrase.contains("great");  // Check if "great" is present
+		boolean range = phrase.contains("great"); // Check if "great" is present
 		System.out.println(range);
 
 	}
@@ -127,36 +129,37 @@ public class StringsExplain {
 		// Compare strings for equality using equals() or equalsIgnoreCase().
 		String halfname = "Steve";
 		String completename = "Steve Jobs";
-		boolean equal = halfname.equals(completename);  // Case-sensitive comparison
+		boolean equal = halfname.equals(completename); // Case-sensitive comparison
 		System.out.println(equal);
-		boolean equalsIgnoreCase = halfname.equalsIgnoreCase(completename);  // Case-insensitive
-		
+		boolean equalsIgnoreCase = halfname.equalsIgnoreCase(completename); // Case-insensitive
+
 	}
 
 	private void getConversion() {
 		// Case Conversion
 		// Change case using toUpperCase() or toLowerCase().
 		String namespelling = "regved pande";
-		String uppercase = namespelling.toUpperCase();  // All characters to uppercase
-		String lowercase = namespelling.toLowerCase();  // All characters to lowercase
+		String uppercase = namespelling.toUpperCase(); // All characters to uppercase
+		String lowercase = namespelling.toLowerCase(); // All characters to lowercase
 	}
-
-
 
 	private void getWhitespace() {
 		// Trimming Whitespace
 		// Remove leading and trailing whitespace using trim().
-		String spaceshipname = "     Millenium Falcon!      ";
-		String trimmed = spaceshipname.trim();  // Remove extra spaces
+		String spaceshipname = "     Millenium Falcon!      "; // would not remove space between words as they are not
+																// white space
+		String trimmed = spaceshipname.trim(); // Remove extra spaces
 		System.out.println(trimmed);
-		
+		// System.out.println("Trimmed name is " +spaceshipname.trim());
+
 	}
 
 	private void getSentenceReplace() {
 		// Sentence Replace
-		// Replace parts of a string using replace(oldChar/oldString, newChar/newString).
+		// Replace parts of a string using replace(oldChar/oldString,
+		// newChar/newString).
 		String reality = "I saw a Persian black dog today";
-		String replaced = reality.replace("dog", "cat");  // Replace "dog" with "cat"
+		String replaced = reality.replace("dog", "cat"); // Replace "dog" with "cat"
 		System.out.println(replaced);
 	}
 
@@ -164,7 +167,35 @@ public class StringsExplain {
 		// String Words
 		// Split a string into an array of words using split(delimiter).
 		String catbreeds = "Persian, Maine Coon, Caracal, Munchkin";
-		String[] cats = catbreeds.split(",");  // Split into an array using comma as delimiter
-		System.out.println(catbreeds);  // Note: This line prints the original string, not the array.
+		String[] cats = catbreeds.split(","); // Split into an array using comma as delimiter
+		System.out.println(catbreeds); // Note: This line prints the original string, not the array.
+	}
+
+	private void getEmptyMethod() throws IOException {
+		// Checking if String is Empty or Not
+		// This method returns true if the string is empty (length() is 0), and false if
+		// not.
+
+		String firstName;
+		String secondName;
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.println("Enter First Name :");
+		firstName = br.readLine();
+
+		System.out.println("Enter Second Name :");
+		secondName = br.readLine();
+
+		// Validation for first name
+		if (firstName.isEmpty()) {
+			System.out.println("First Name is required. ");
+			firstName = br.readLine();
+
+			// Validation for second name
+			if (secondName.isEmpty()) {
+				System.out.println("Second Name is required");
+			}
+		}
 	}
 }
