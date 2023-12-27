@@ -18,7 +18,7 @@ class features extends iPhone {
     }
 }
 
-public class multipleinheritance { 
+public class AnotherMultipleInheritance { 
     public static void main(String[] args) {
         features f = new features(); 
         f.smartphone();
