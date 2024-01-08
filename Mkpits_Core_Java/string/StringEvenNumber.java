@@ -4,7 +4,7 @@ public class StringEvenNumber {
 
 	public static void main(String[] args) throws NumberFormatException {
 
-		String sentence = "Pranav Doraemon Jiske Pass Bohot Saare Gadgets Hai";
+		String sentence = "My Name is Regved Pande";
 
 		/*
 		 * Splits the above sentence into list of words (4) and then add them to the
