@@ -1,3 +1,4 @@
+package com.mkpits.classesandobjects;
 
 // Main class definition
 public class PersonClass {
@@ -21,6 +22,7 @@ public class PersonClass {
         System.out.println("Age: " + p1.age);
         System.out.println("Weight: " + p1.weight);
         System.out.println("Height: " + p1.height);
+        
         // Printing the zodiac sign for Person1
         System.out.println("Zodiac Sign is: " + Person1.zodiacsign());
 
@@ -52,6 +54,7 @@ public class PersonClass {
         float height;
 
         // Static variable representing the zodiac sign for Person1
+        // Static variables do not depend on an object, and you also don't need to create any object for them
         static String zodiacsign = "Cancer";
 
         // Static method to print the zodiac sign for Person1
@@ -68,6 +71,7 @@ public class PersonClass {
         float height;
 
         // Static variable representing the zodiac sign for Person2
+        // Static variables do not depend on an object, and you also don't need to create any object for them
         static String zodiacsign = "Sagittarius";
 
         // Static method to print the zodiac sign for Person2
