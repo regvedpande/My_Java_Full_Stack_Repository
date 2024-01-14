@@ -22,7 +22,7 @@ class Dog {
 }
 
 // Main class to create and interact with dog objects
-public class Dogclass {
+public class DogClass {
     public static void main(String[] args) {
 
         // Create two dog objects with different properties

@@ -2,10 +2,10 @@ package com.mkpits.classesandobjects;
 
 // Main class definition
 public class PersonClass {
-    
+
     // Main method
     public static void main(String[] args) {
-        
+
         // Creating an instance of Person1
         Person1 p1 = new Person1();
         p1.name = "Regved";
@@ -22,9 +22,9 @@ public class PersonClass {
         System.out.println("Age: " + p1.age);
         System.out.println("Weight: " + p1.weight);
         System.out.println("Height: " + p1.height);
-        
+
         // Printing the zodiac sign for Person1
-        System.out.println("Zodiac Sign is: " + Person1.zodiacsign());
+        System.out.println("Zodiac Sign is: " + Person1.zodiacsign);
 
         // Creating an instance of Person2
         Person2 p2 = new Person2();
@@ -43,7 +43,7 @@ public class PersonClass {
         System.out.println("Weight: " + p2.weight);
         System.out.println("Height: " + p2.height);
         // Printing the zodiac sign for Person2
-        System.out.println("Zodiac Sign is: " + Person2.zodiacsign());
+        System.out.println("Zodiac Sign is: " + Person2.zodiacsign);
     }
 
     // Definition of the Person1 class
