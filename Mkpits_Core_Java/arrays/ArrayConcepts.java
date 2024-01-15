@@ -3,11 +3,11 @@ package com.mkpits.array;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class ArrayConcepts {
 
-    public static void main(String[] args) throws IOException {
-
+    public static void main(String[] args) {
         // Declaration of Array
         int[] iterate;
         int rotate[];
@@ -41,19 +41,44 @@ public class ArrayConcepts {
             System.out.println("Pin Code at index " + i + ": " + pinCode[i]);
         }
 
-        // Reading input from the user to populate an array
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Enter 5 names");
-        String names[] = new String[5];
-
-        // Input: Reading names from the user
-        for (int i = 0; i < names.length; i++) {
-            names[i] = reader.readLine();
+        // Enhanced for loop (for-each loop) for array traversal
+        System.out.println("Using enhanced for loop to print names:");
+        for (String n : name) {
+            System.out.println(n);
         }
 
-        // Output: Printing names using a loop
-        for (int i = 0; i < names.length; i++) {
-            System.out.println("Name at index " + i + ": " + names[i]);
+        // Arrays class utility methods
+        int[] numbers = {5, 1, 9, 3, 7};
+        Arrays.sort(numbers); // Sort the array in ascending order
+        System.out.println("Sorted numbers: " + Arrays.toString(numbers));
+
+        // Multidimensional array
+        int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        System.out.println("Printing elements of the 2D array:");
+        for (int[] row : matrix) {
+            for (int element : row) {
+                System.out.print(element + " ");
+            }
+            System.out.println();
+        }
+
+        // Dynamic initialization of array
+        int dynamicSize = 3;
+        int[] dynamicArray = new int[dynamicSize];
+        System.out.println("Enter " + dynamicSize + " elements for dynamicArray:");
+
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
+            for (int i = 0; i < dynamicSize; i++) {
+                dynamicArray[i] = Integer.parseInt(reader.readLine());
+            }
+
+            // Output: Printing dynamicArray using a loop
+            System.out.println("Elements in dynamicArray:");
+            for (int i : dynamicArray) {
+                System.out.print(i + " ");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

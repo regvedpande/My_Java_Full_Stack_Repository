@@ -3,7 +3,7 @@ package com.mkpits.bufferedreader;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Registration{
+public class Registration {
 
     String firstName;
     String lastName;
@@ -11,8 +11,7 @@ public class Registration{
     int age;
     long mobile;
 
-    public static void main(String[] args) throws Exception 
-    {
+    public static void main(String[] args) throws Exception {
         Registration registration = new Registration();
         registration.register();
     }
@@ -36,4 +35,3 @@ public class Registration{
         this.mobile = Long.parseLong(reader.readLine());
     }
 }
-
