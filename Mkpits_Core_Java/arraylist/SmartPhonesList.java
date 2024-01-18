@@ -1,6 +1,5 @@
-package com.mkpits.collectionframeworks;
+package com.mkpits.arraylist;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 public class SmartPhonesList {
@@ -15,13 +14,21 @@ public class SmartPhonesList {
         smartphones.add("Asus ROG Phone 8");
         Collections.sort(smartphones);
         System.out.println(smartphones);
+
+        for (String string : smartphones) {
+           System.out.println(string.contains("Nothing Phone 2")? "Yes" : "No"); 
+        }
+
+        // ArrayList<String>check = new ArrayList<>();
+        
+
        
-        for (int i = 0; i < smartphones.size(); i++) {
-            System.out.println(smartphones.get(i));
-        }
-        for (String assign : smartphones) {
-            System.out.println(assign);
-        }
+        // for (int i = 0; i < smartphones.size(); i++) {
+        //     System.out.println(smartphones.get(i));
+        // }
+        // for (String assign : smartphones) {
+        //     System.out.println(assign);
+        // }
 
     }
 }
