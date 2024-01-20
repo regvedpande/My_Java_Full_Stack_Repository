@@ -7,59 +7,74 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RestaurantManagementusingList {
-    public static void main(String[] args) throws IOException {
-        
-        BufferedReader br  = new BufferedReader(new InputStreamReader(System.in));
+	public static void main(String[] args) throws IOException {
 
-        //Name the Customers
-        
-        List<String>customername = new ArrayList<String>();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Welcome! to our Restaurant do you want to make any reservation : ");
-    
-        char ch = (char) br.read();
+		// Name the Customers
+
+		List<String> customername = new ArrayList<String>();
+
+		System.out.println("Welcome! to our Restaurant do you want to make any reservation : ");
+
+		char ch = (char) br.read();
 		br.readLine();
-        
-        if ( ch == 'Y' || ch == 'y') {
-            
-            System.out.println("Welcome to our Restaurant");
 
-        } else {
-            
-            System.out.println("Sorry we cannot help you");
-        }
+		if (ch == 'Y' || ch == 'y') {
 
-        System.out.println("Can you please tell me your names : ");
+			System.out.println("Welcome to our Restaurant");
 
-        for (int i = 0; i < 6; i++) {
-            
-            customername.add(br.readLine());
+		} else {
 
-        }
+			System.out.println("Sorry we cannot help you");
+		}
 
-        System.out.println("So your names are : " +customername);
+		System.out.println("How many people you have to make Reservation for : ");
+		int store = Integer.parseInt(br.readLine());
 
+		System.out.println("Can you please tell me your names : ");
 
+		for (int i = 0; i < store; i++) {
 
-        //Name of Menus
+			customername.add(br.readLine());
 
-        List<String>restaurantmenu = new ArrayList<String>();
+		}
 
-        System.out.println("What would you like to Eat : ");
-        
+		System.out.println("So your names are : " + customername);
 
-        for (int i = 0; i < 6; i++) {
-            
-            restaurantmenu.add(br.readLine());
-        }
+		List<String> orderlist = new ArrayList<String>();
+		orderlist.add("Pizza");
+		orderlist.add("Burger");
+		orderlist.add("Chicken");
+		orderlist.add("Pulao");
+		orderlist.add("Paneer Bhurji");
+		orderlist.add("Noodles");
+		orderlist.add("Dosa");
+		orderlist.add("Hot Dog");
+		orderlist.add("Dhokla");
+		orderlist.add("Vada Pav");
 
-        System.out.println("Your selected menu items are : " +restaurantmenu);
+		System.out.println("What would you like to Eat we have following options available : " + orderlist);
 
+		List<String> orderitem = new ArrayList<>();
+		for (int i = 0; i < store; i++) {
 
-        for (String string : restaurantmenu) {
-            
-            System.out.println("Sir! Your names and their orders are : " + customername + " " + restaurantmenu.get(customername.indexOf(string)));
-        }
+			System.out.println(customername.get(i) + " What would you like to Order");
 
-    }
+			String choice = "Order";
+			while (!choice.equalsIgnoreCase("End")) {
+				String itemName = br.readLine();
+
+				orderitem.add(itemName);
+				choice = itemName;
+			}
+
+			orderitem.remove(orderitem.lastIndexOf("End"));
+			System.out.println("Order of  " + customername.get(i) + " is " + orderitem);
+			orderitem = new ArrayList<String>();
+
+		}
+
+	}
+
 }
