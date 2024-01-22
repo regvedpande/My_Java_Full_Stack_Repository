@@ -2,23 +2,19 @@ package com.mkpits.array;
 
 public class LargestNum {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		int numbers[] = { 1, 4, 30, 2, 5 };
+        int numbers[] = {1, 4, 30, 2, 5};
 
-		int largest = 0;
+        // Set the initial value of 'largest' to the first element of the array
+        int largest = numbers[0];
 
-		for (int i = 0; i < numbers.length; i++) {
-			// largest = numbers[i] ;
+        for (int i = 1; i < numbers.length; i++) {
+            if (largest < numbers[i]) {
+                largest = numbers[i];
+            }
+        }
 
-			if (largest > numbers[i]) {
-				largest = largest;
-			} else {
-
-				largest = numbers[i];
-			}
-
-		}
-		System.out.println(largest);
-	}
+        System.out.println("The largest number is: " + largest);
+    }
 }

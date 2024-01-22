@@ -9,8 +9,11 @@ public class ArrayConcepts {
 
     public static void main(String[] args) {
         // Declaration of Array
-        int[] iterate;
-        int rotate[];
+        int[] iterate = new int[10];
+        System.out.println(iterate);
+
+        int rotate[] = new int[10];
+        System.out.println(rotate);
 
         // Construction of Array
         iterate = new int[10];
@@ -83,4 +86,5 @@ public class ArrayConcepts {
     }
 }
 
+		
 		
