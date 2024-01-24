@@ -12,6 +12,11 @@ public class ImplementingArrayListImportantConcepts {
 		get.add(new Employee("John", "24"));
 		get.add(new Employee("Narendra", "26"));
 
+//		// you can also do it manually like add data from model class
+//		Employee employee = new Employee();
+//		employee.setName("Regved");
+//		employee.setAge("23");
+
 		ArrayList<Employee> getanother = new ArrayList<Employee>();
 		getanother.add(new Employee("Rahul", "32"));
 		getanother.add(new Employee("Robert", "29"));

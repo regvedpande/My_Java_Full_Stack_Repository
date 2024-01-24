@@ -14,6 +14,11 @@ public class Employee {
 
 	}
 
+////It would create no Arguement Constructor here
+//	public Employee() {
+//
+//	}
+
 	public String getName() {
 		return name;
 	}
