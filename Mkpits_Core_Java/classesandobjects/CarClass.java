@@ -1,4 +1,4 @@
-package com.mkpits.classesandobjects;
+
 
 // Define a class named Car
 class Car {
