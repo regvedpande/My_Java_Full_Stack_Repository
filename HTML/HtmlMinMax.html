@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- This HTML snippet includes input fields for "Name" and "Password" with specified minimum 
+            and maximum lengths. However, the `min` and `max` attributes are not applicable to text and 
+            password input types. Revised with `minlength` and `maxlength` for the intended purpose. 
+            The form includes a submit button. -->
+        <h3>Use of Min and Max</h3>
+        Name: <input type="text" min="5" max="10"><br><br>
+        Password<input type="password" min="5" max=""><br><br>
+        <input type="submit" value="Submit">
+
+        <!--This HTML snippet demonstrates the use of `minlength` and `maxlength` attributes for input validation.
+            It includes fields for "Name" and "Password," each with a minimum length of 5 characters and a maximum
+            length of 15 characters. The form also contains a submit button. -->
+        <h3>Use of min Length and max Length</h3>
+        Name: <input type="text" minlength="5" maxlength="15"><br><br>
+        Password<input type="password" minlength="5" maxlength="15"><br><br>
+        <input type="submit" value="Submit">
+
+
+    
+    </form>
+</body>
+</html>

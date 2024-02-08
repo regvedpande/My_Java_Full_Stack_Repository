@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <!--This form meticulously captures details for two individuals: Person 1 and Person 2. 
+        Each person's information is encapsulated within a fieldset, ensuring a structured and organized layout.
+        The name and age inputs include specific validation, restricting age to whole numbers. Radio buttons offer
+        a user-friendly interface for selecting gender. The use of legends and labels enhances accessibility, 
+        providing clear context for each input section. Overall, this thoughtful design optimizes user experience
+        in inputting comprehensive details about the specified individuals. -->
+        
+    <fieldset>
+        <legend><b>Details of Person 1</b></legend>
+        Name:<input type="text" name="fname">
+        Age:<input type="number" step="0">
+        <label> Male<input type="radio" name="status"></label>
+        <label> Female<input type="radio" name="status"></label>
+    </fieldset>
+ 
+    <fieldset>
+    <legend><b>Details of Person 2</Details></b></legend>
+    Name:<input type="text" name="fname">
+    Age:<input type="number" step="0">
+    <label for="male">Male</label>
+    <input type="radio" name="otherstatus" id="male">
+    <label for="female">Female</label>
+    <input type="radio" name="otherstatus" id="female">
+    </fieldset><br>
+    <input type="submit" name="Submit">
+</form> 
+</body>
+</html>

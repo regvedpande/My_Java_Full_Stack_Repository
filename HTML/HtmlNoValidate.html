@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Validate</title>
+</head>
+<body>
+    <!--This HTML form uses the "novalidate" attribute, indicating that browser validation should
+        be disabled (Disabling browser validation ("novalidate") allows the form to bypass default browser checks, 
+        giving developers control over custom validation on the server side.) The "Name" input is marked as required, 
+        prompting user input, while the "Password" field remains optional. It includes "Submit" and "Reset" buttons 
+        for user interaction, and the absence of validation allows for custom validation handling on the server side. -->
+
+    <form novalidate>
+        Name:<input type="text" name="name" required = "required"><br>
+        Password:<input type="password" name="pass"><br><br>
+        <input type="submit" name="Submit">
+        <input type="reset" name="Reset">
+    </form>
+</body>
+</html>

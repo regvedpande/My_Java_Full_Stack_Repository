@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">            
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--This HTML form has its action set to "gotform.php," meaning the form data will be 
+    sent to this file for processing. The method is specified as "post," indicating that 
+    the form data will be transmitted in the HTTP request body. UTF-8 encoding is declared 
+    for character representation. The form includes input fields for a name and password, 
+    with a submit button to send the data and a reset button to clear the entries.-->
+    
+<form action="gotform.php" method="post" accept-charset="UTF-8">
+
+    Name: <input type="text" name="name"><br><br>
+    Password: <input type="password" name="pass"><br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</body>
+    </form>
+</html>

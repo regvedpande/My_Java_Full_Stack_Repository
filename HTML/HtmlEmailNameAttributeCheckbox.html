@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Concepts of Email, Name Attribute and Checkbox</h2>
+    <form>
+        <!--The HTML form captures user information with fields for name (using the "fname" attribute), 
+            email, and gender (radio buttons for male and female). Additionally, checkboxes are provided 
+            for selecting the user's location (Nagpur, Mumbai, Pune). However, the form lacks a specified 
+            action attribute, rendering it non-functional, and the "Login" button has no associated action as well. -->
+        Name: <input type="text" name="fname"><br>
+        Email : <input type="email"><br>
+        Gender : <input type="radio" name="status">Male <input type="radio" name="status">Female
+        <h3>Where do you live</h3>
+        <!-- If you want to remove pre checked remove this name="Location" checked = "checked"-->
+        Nagpur:<input type="checkbox" name="Location" checked = "checked">
+        Mumbai:<input type="checkbox">
+        Pune:<input type="checkbox"><br><br>
+        <input type="button" value="Login">
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!--In this HTML form with the ID "form1," the "action" attribute is set to "userform.html,"
+        specifying the destination for form data upon submission. The "target" attribute is set to "_blank,"
+        causing the form to open the response in a new browser window or tab. The form includes input fields 
+        for "Name," "Password," and "City." There are two submit buttons - "Submit" for regular users and "Admin"
+        for administrative actions. The "formtarget" attribute on the "Admin" button is set to "_self," causing 
+        the form to submit within the same browser window. This design allows for different form submission 
+        behaviors based on the button clicked. -->
+        
+    <form id="form1" action="userform.html" target="_blank">
+        Name: <input type="text" name="name"><br><br>
+        Password<input type="password" name="pass"><br><br>
+        City:<input type="text" name="city"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" value="Admin" formtarget="_self">
+
+</body>
+</html>

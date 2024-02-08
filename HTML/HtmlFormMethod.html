@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- This HTML form with the ID "form1" utilizes the "get" method, indicating that form data 
+        will be appended to the URL for submission. It includes input fields for "Name," "Password," 
+        and "City." The default "Submit" button triggers a "get" request, while the "Admin Submit" button,
+        with the "formmethod" attribute set to "post," ensures a "post" request for a potentially more secure
+        and complex operation, like handling administrative actions. This design allows the form to manage 
+        different types of requests based on user roles or data handling requirements. -->
+        
+    <form id="form1" method="get">
+        Name: <input type="text" name="name"><br><br>
+        Password<input type="password" name="pass"><br><br>
+        City:<input type="text" name="city"><br><br>
+        <input type="submit" name="Submit"><br><br>
+        <input type="submit" name="Admin Submit" formmethod="post">
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- This HTML form with the ID "form1" is configured with the "application/x-www-form-urlencoded" 
+        encoding type, suitable for standard form submissions. It includes input fields for "Name," "Password,"
+        and "City." The "Submit" button triggers the default form submission, while the "Admin Submit" button, 
+        with the "formenctype" attribute set to "multipart/form-data," indicates a different encoding type for 
+        more complex data, often used in file uploads. This dual-button setup allows the form to handle different
+        types of submissions based on user roles or data requirements. -->
+        
+    <form id="form1" enctype="application/x-www-form-urlencoded">
+        Name: <input type="text" name="name"><br><br>
+        Password<input type="password" name="pass"><br><br>
+        City:<input type="text" name="city"><br><br>
+        <input type="submit" name="Submit"><br><br>
+        <input type="submit" name="Admin Submit" formenctype="multipart/form-data">
+    </form>
+</body>
+</html>
