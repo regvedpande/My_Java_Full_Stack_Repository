@@ -1,0 +1,22 @@
+/* the code styles the body of an HTML document with a white background, 30px of padding, and a background image
+of "/Images/monaco.jpg" that is repeated no more than once, sized to cover the entire body element, and positioned
+at the top. */
+
+body {
+    background-color: rgb(255, 255, 255); 
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/Images/monaco.jpg");
+    background-position: top;
+}
+    
+    h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+    }
+    
+    p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: beige;
+    }

@@ -1,0 +1,26 @@
+.myDiv{
+    background-color: grey;
+    background-image: url("Images/Jesko Car.jpg"), url("Images/Gemera\ Car.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    font-size: xx-large;
+    background-origin: border-box;
+    background-attachment: scroll;
+    
+}
+
+p{
+    text-align:center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: smaller;
+
+}
+
