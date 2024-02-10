@@ -1,0 +1,18 @@
+body{
+    background-color: tomato;
+}
+
+h1{
+    color: black;
+}
+
+p{
+    color: black;
+    direction: rtl;
+}
+
+#kang{
+    color: blue;
+    direction: ltr;
+}
+

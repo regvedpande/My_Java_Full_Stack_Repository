@@ -1,0 +1,20 @@
+body{
+    background-image: url(/CSS/Images/meteors.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color:goldenrod;
+    text-shadow: 2px 2px 5px goldenrod;
+}
+p{
+    /* The font-family property in HTML allows the specification of font names for text
+    within an element, such as "Arial" or "Times New Roman". When a font family name 
+    consists of more than one word, it must be enclosed in quotation marks, as shown in 
+    the example with "Times New Roman". */
+    font-family: 'Times New Roman', Times, serif;
+    color:goldenrod;
+    text-shadow: 1px 1px 3px goldenrod;
+}

@@ -1,0 +1,27 @@
+body{
+    background-image: url(/CSS/Images/spacex.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* - CSS `white-space` property determines how white space within an HTML element is handled.
+- Options include:
+  - `normal`: Sequences of whitespace collapse into a single space, and text wraps when needed.
+  - `pre`: Whitespace is preserved, and text only wraps at line breaks, akin to the HTML `<pre>` tag.
+  - `nowrap`: Whitespace collapses into a single space, and text doesn't wrap until a `<br>` tag is encountered.
+  - `pre-line`: Whitespace collapses into a single space, and text wraps when needed and at line breaks.
+  - `pre-wrap`: Whitespace is preserved, allowing text to wrap when necessary and at line breaks.
+- These options offer flexibility in formatting and handling of white space based on specific design or content requirements in CSS. */
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-style: italic;
+    white-space: nowrap;
+    color: azure;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    white-space: pre;
+    color: aliceblue;
+}

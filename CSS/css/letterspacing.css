@@ -1,0 +1,13 @@
+body{
+   background-color: aliceblue;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    letter-spacing: 10px;
+}

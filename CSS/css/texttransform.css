@@ -1,0 +1,24 @@
+body{
+    background-image: url(/CSS/Images/nuclearphysics.jpg);
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* Font size in HTML can be specified using percentage, pixels (px), or em units, as illustrated by 
+    examples like "50%", "16px," and "2em." Additionally, predefined size values like "xx-small" can be used.
+    The default text size in browsers is typically 16px or 1em. */
+    font-size: larger;
+
+    color: honeydew;
+    
+    /* The text-transform property in CSS is employed to manipulate text case, allowing conversion to uppercase,
+    lowercase, or capitalizing the first letter of each word. In the provided example, the h1 element's text is 
+    transformed to uppercase using "text-transform: uppercase." */
+    text-transform: uppercase;
+}
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    color: honeydew;
+}

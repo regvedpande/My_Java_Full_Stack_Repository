@@ -1,0 +1,16 @@
+body{
+    background-image: url("/CSS/Images/platinum.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: beige;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: beige;
+    text-decoration: underline;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: beige;
+}

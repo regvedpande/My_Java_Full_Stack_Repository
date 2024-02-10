@@ -1,0 +1,15 @@
+body{
+    background-image: url(/CSS/Images/cloudcomputing.jpg);
+    background-size: cover;
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+}

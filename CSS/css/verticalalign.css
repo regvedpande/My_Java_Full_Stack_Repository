@@ -1,0 +1,25 @@
+body{
+    background-image: url(/CSS/Images/computers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    /* It specifies a normal, condensed or extended font face. We can set this 
+    property to normal, wider, narrower, ultra-condensed, extra-condensed, condensed,
+    semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded.*/
+    font-stretch: condensed;
+    
+    font-size: larger;
+    color: white;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-stretch: expanded;
+    font-size: medium;
+    color: aliceblue;
+}

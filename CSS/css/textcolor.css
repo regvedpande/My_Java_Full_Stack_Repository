@@ -1,0 +1,13 @@
+body{
+    background-image: url(../Images/Coal.jpg);
+    background-size: cover;
+}
+
+h1{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    color: wheat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

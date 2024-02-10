@@ -1,0 +1,22 @@
+body{
+    background-image: url(/CSS/Images/vedicage.jpg);
+    background-repeat: no-repeat;
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+
+    /* The CSS `font-variant` property determines if a font should be displayed as small caps. It can be 
+    set to either "normal" for regular font rendering or "small-caps" to render the text with small capital
+    letters. In the provided example, the style rule "p { font-variant: small-caps; }" is used to apply the 
+    small caps formatting to the text within the HTML paragraph element. */
+    font-variant: small-caps;
+    
+    color: aliceblue;
+}
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    font-variant: normal;
+    color: aliceblue;
+}

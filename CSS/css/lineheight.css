@@ -1,0 +1,12 @@
+body{
+    background-image: url("/CSS/Images/jupiter.jpg");
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orangered;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: tomato;
+    line-height: 80%;
+}
