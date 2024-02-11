@@ -1,0 +1,7 @@
+body{
+    background-color: white;
+}
+
+ul{
+    list-style-image: url("Images/firstsuit.jpg");
+}

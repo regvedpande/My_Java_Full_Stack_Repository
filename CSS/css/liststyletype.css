@@ -1,0 +1,9 @@
+#first{
+    list-style-type: circle;
+    font-style: oblique;
+}
+
+#second{
+    list-style-type: decimal;
+    font-style: normal;
+}
