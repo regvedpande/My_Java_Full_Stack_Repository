@@ -1,0 +1,31 @@
+/* styles.css */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid black; /* Add black border to the whole table */
+}
+
+caption {
+    font-size: 1.5em;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+colgroup, thead, tfoot {
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #ddd; /* Add border between header/footer and content */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tfoot {
+    font-weight: bold;
+    /* visibility: collapse; */
+}
+

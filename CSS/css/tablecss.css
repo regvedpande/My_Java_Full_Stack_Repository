@@ -1,0 +1,20 @@
+table,th,td{
+    padding: 2px;
+    border-width: 4px;
+    box-shadow: 4px 4px 8px pink;
+    border-style: solid;
+    border-color: palevioletred;
+    border-spacing: 3px;
+}
+caption{
+    caption-side: top;
+    font-size: large;
+}
+
+#color1{
+background-color: aqua;
+}
+
+#color2{
+    background-color: greenyellow;
+}

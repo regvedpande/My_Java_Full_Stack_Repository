@@ -1,0 +1,14 @@
+.colour1{
+    border-style: dashed;
+    border-color: salmon;
+    background-color: aquamarine;
+    border-width: 3px;
+}
+.colour2{
+    border-style: dotted dashed;
+    border-color: aquamarine;
+    background-color: black;
+    border-width: 5px;
+    color: pink;
+    text-shadow: 1px 1px 2px red;
+}

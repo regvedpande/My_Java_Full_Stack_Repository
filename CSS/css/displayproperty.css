@@ -1,0 +1,19 @@
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.inlinebox {
+    display: inline-block;
+}
+
+.inlineflex {
+    display: inline-flex;
+}

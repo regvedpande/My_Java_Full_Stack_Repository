@@ -3,5 +3,9 @@ body{
 }
 
 ul{
-    list-style-image: url("Images/firstsuit.jpg");
+    /* In this an image is used as the list item marker. We can set this property to none or web address of an image. */
+    list-style-image: url(/CSS/Images/smartphones.jpg);
+}
+OL{
+    list-style-image: url(/CSS/Images/jeskocar.jpg);
 }

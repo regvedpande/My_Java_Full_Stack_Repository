@@ -1,0 +1,10 @@
+/* 4 types: dotted, solid, border, dashed  */
+.border1 {
+    border-style: dotted solid double dashed;
+    border-color: red;
+}
+
+.border2 {
+    border-style: dashed double;
+
+}
