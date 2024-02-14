@@ -1,0 +1,72 @@
+body {
+    background-color: white;
+}
+
+#margin {
+    padding: 20px;
+}
+
+#increse{
+    height: 20px;
+    width: 30px;
+}
+
+.mydiv {
+    border: 1px solid grey;
+    width: 1400px;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding-left: 0px;
+    box-shadow: 2px 2px 5px whitesmoke;
+}
+
+.searchbar {
+    padding-left: 20px;
+    color: lightblue;
+    display: flex; 
+    align-items: center;
+    position: relative;
+    height: 50px;
+    width: 500px;
+    border-radius: 30px;
+}
+
+input {
+    height: 25px;
+    width: 400px;
+}
+
+.options form {
+    padding-left: 10px;
+    margin-left: 20px;
+    display: flex;
+}
+
+select {
+    height: 25px;
+    width: 120px;
+    padding: 10px;
+}
+
+.searchbar button {
+    padding-left: 10px;
+    margin-left: -30px; 
+    padding: 0;
+    background-color: transparent;
+    background-color: gray;
+}
+
+#fix {
+    display: flex;
+    align-items: center;
+}
+.select-container {
+    padding-left: 10px;
+    margin-left: 20px;
+    display: flex;
+}

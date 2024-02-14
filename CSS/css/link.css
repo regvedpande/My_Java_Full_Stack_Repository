@@ -1,16 +1,21 @@
 
 a:link {
     color: red;
+    /* The text-decoration property is mostly used to remove underlines from links: */
+    text-decoration: none;
 }
 
 a:visited {
     color: purple;
+    text-decoration: underline;
 }
 
 a:hover {
     color: blue;
+    text-decoration: none;
 }
 
 a:active {
     color: green;
+    text-decoration: underline;
 }

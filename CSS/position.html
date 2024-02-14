@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 120vh; /* Make the body taller for scrolling */
+    }
+
+    /* Static positioning for heading */
+    h1 {
+      background-color: lightcoral;
+      /* Default position. Elements are positioned according to the normal flow of the document. */
+    }
+
+    /* Relative positioning for first paragraph */
+    p.first-paragraph {
+      background-color: lightblue;
+      position: relative; /* Positioned relative to its normal position. */
+      top: 20px; /* Can be shifted using top, right, bottom, and left properties. */
+      left: 20px;
+    }
+
+    /* Absolute positioning for second paragraph */
+    p.second-paragraph {
+      background-color: lightgreen;
+      position: absolute; /* Positioned relative to the nearest positioned ancestor. If no ancestor, positioned relative to the initial containing block. */
+      top: 40px;
+      left: 40px;
+    }
+
+    /* Fixed positioning for third paragraph */
+    p.third-paragraph {
+      background-color: lightsalmon;
+      position: fixed; /* Positioned relative to the viewport. Stays fixed even when scrolling. */
+      top: 20px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>This is a heading</h1>
+  <p class="first-paragraph">This is a paragraph with relative positioning.</p>
+  <p class="second-paragraph">This is a paragraph with absolute positioning.</p>
+  <p class="third-paragraph">This is a paragraph with fixed positioning.</p>
+</body>
+</html>
