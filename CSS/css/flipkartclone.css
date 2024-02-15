@@ -1,72 +1,132 @@
-body {
-    background-color: white;
+#container {
+    height: 100%;
+    width: 100%;
+    border: 1px solid  rgb(234, 234, 247);
 }
 
-#margin {
-    padding: 20px;
-}
-
-#increse{
-    height: 20px;
-    width: 30px;
-}
-
-.mydiv {
-    border: 1px solid grey;
-    width: 1400px;
-    height: 80px;
-    background-color: white;
+#mainheader .head {
+    width: 60%;
+    height: 80%;
     display: flex;
-    align-items: center;
+    margin-bottom: 50px;
 }
 
-.logo {
-    padding-left: 0px;
-    box-shadow: 2px 2px 5px whitesmoke;
-}
-
-.searchbar {
-    padding-left: 20px;
-    color: lightblue;
-    display: flex; 
-    align-items: center;
-    position: relative;
+.logo img {
     height: 50px;
-    width: 500px;
-    border-radius: 30px;
+    width: 180px;
+    margin-top: 25px;
+    margin-left: 25px;
 }
 
-input {
-    height: 25px;
-    width: 400px;
-}
-
-.options form {
-    padding-left: 10px;
-    margin-left: 20px;
+.searchlogo {
     display: flex;
+    margin-bottom: 5px;
 }
 
-select {
-    height: 25px;
-    width: 120px;
-    padding: 10px;
+.searchlogo img {
+    height: 24px;
+    width: 24px;
+    margin-top: 29px;
+    margin-left: 25px;
+    margin-bottom: 30px;
 }
 
-.searchbar button {
-    padding-left: 10px;
-    margin-left: -30px; 
-    padding: 0;
-    background-color: transparent;
-    background-color: gray;
+.searchdiv input {
+    margin-top: 5px;
 }
 
-#fix {
+.searchlogo input {
+    height: 44px;
+    width: 500px;
+    border: transparent;
+    background: none;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 25px;
+}
+
+.searchdiv {
+    height: 50px;
+    width: 2350px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 28px;
+    margin-left: 65px;
+    margin-bottom: 20px;
+    background-color: rgb(234, 234, 247);
+    border-radius: 10px;
     display: flex;
     align-items: center;
 }
-.select-container {
-    padding-left: 10px;
-    margin-left: 20px;
+
+header {
     display: flex;
+}
+
+.userlogo {
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.userlogo, .cart, .shop {
+    margin-top: 40px;
+    margin-left: 50px; 
+    margin-bottom: 30px;
+}
+
+#anotherarrange, #shops, #arrange {
+    margin-left: 20px;
+    position: relative;
+    bottom: 8px;
+}
+
+.vertical {
+    margin-left: 2px;
+    position: relative;
+    bottom: -45px;
+}
+
+#move {
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#fontincrease {
+    font-size: large;
+    margin-top: 20px;
+}
+
+#second {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#tomatoes {
+    margin-left: 80px;
+}
+
+#item1, #item2, #item3, #item4, #item5 {
+    text-align: center;
+}
+
+#smartphones {
+    margin-left: 105px;
+}
+
+#fashion {
+    margin-left: 130px;
+}
+
+#electronics {
+    margin-left: 160px;
+}
+
+#appliances {
+    margin-left: 190px;
+}
+
+#toys {
+    margin-left: 200px;
 }
