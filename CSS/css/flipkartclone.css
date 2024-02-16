@@ -2,6 +2,10 @@
     height: 100%;
     width: 100%;
     border: 1px solid  rgb(234, 234, 247);
+    
+}
+#up{
+    position: fixed;
 }
 
 #mainheader .head {
@@ -9,6 +13,7 @@
     height: 80%;
     display: flex;
     margin-bottom: 50px;
+   
 }
 
 .logo img {
@@ -132,11 +137,53 @@ header {
 
 .third{
     background-color: white;
-    margin-top: 20px;
+    margin-top: 15px;
+    display: flex;
     justify-content: flex-start;
+    margin-left: 30px;
+
 }
 
-.row{
-    margin-left: 20px;
-    margin-top: 30px;
+#fourth{
+    display:flex;
+}
+.smartphone15{
+border: 1px solid rgb(166, 166, 166);
+display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-right: -100px;
+
+}
+
+#phonecaption{
+display: flex;
+margin-top: 200px;
+margin-right: 300px;
+
+}
+
+.macbook{
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.camera{
+    margin-left: 10px;
+    margin-top: 0px;
+    display: flex;
+}
+
+.printer{
+    margin-left: 10px;
+    margin-top: 0px;
+    display: flex;
+}
+
+.ssd{
+    margin-left: 100px;
+    margin-top: 10px;
+    display: flex;
 }
