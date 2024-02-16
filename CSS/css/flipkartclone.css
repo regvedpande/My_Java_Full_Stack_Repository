@@ -77,11 +77,10 @@ header {
 #anotherarrange, #shops, #arrange {
     margin-left: 20px;
     position: relative;
-    bottom: 8px;
 }
 
 .vertical {
-    margin-left: 2px;
+    margin-left: 8px;
     position: relative;
     bottom: -45px;
 }
@@ -129,4 +128,15 @@ header {
 
 #toys {
     margin-left: 200px;
+}
+
+.third{
+    background-color: white;
+    margin-top: 20px;
+    justify-content: flex-start;
+}
+
+.row{
+    margin-left: 20px;
+    margin-top: 30px;
 }
