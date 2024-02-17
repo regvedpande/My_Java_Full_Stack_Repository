@@ -1,0 +1,31 @@
+/* Resetting Margin and Padding Before Making Project */
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo{
+display: flex;
+border: 2px solid black;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+}
+
+.searchbar{
+    border: 2px solid red;
+    flex: 1; /* Take up available space in the middle */
+    margin: 0 12px; /* Adjust as needed */
+
+}
+
+.icon{
+border: 2px solid blue;
+display: inline-block; /* making small block on the right */
+position: absolute; /*for aligning it to the right*/
+
+}
+
+.header{
+    display: inline-flex;
+}

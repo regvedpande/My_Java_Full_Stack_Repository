@@ -1,8 +1,12 @@
 #container {
     height: 100%;
     width: 100%;
-    border: 1px solid  rgb(234, 234, 247);
+    border: 1px solid  rgb(13, 13, 211);
     
+}
+.ap{
+    height: 90px;
+    margin-top: 0px;
 }
 #up{
     position: fixed;
@@ -10,29 +14,32 @@
 
 #mainheader .head {
     width: 60%;
-    height: 80%;
+    height: 60%;
     display: flex;
     margin-bottom: 50px;
    
 }
 
 .logo img {
-    height: 50px;
-    width: 180px;
-    margin-top: 25px;
-    margin-left: 25px;
+    height: 40px;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 40px;
 }
 
 .searchlogo {
     display: flex;
-    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-left: -19px;
+    margin-bottom: 11px;
+   
 }
 
 .searchlogo img {
     height: 24px;
     width: 24px;
     margin-top: 29px;
-    margin-left: 25px;
+    margin-left: 20px;
     margin-bottom: 30px;
 }
 
@@ -46,46 +53,72 @@
     border: transparent;
     background: none;
     margin-top: 15px;
-    margin-left: 30px;
-    margin-right: 25px;
+    margin-left: 29px;
+    margin-right: 45px;
 }
 
 .searchdiv {
-    height: 50px;
-    width: 2350px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-top: 28px;
-    margin-left: 65px;
-    margin-bottom: 20px;
-    background-color: rgb(234, 234, 247);
+    height: 45px;
+    width: 4400px;
+    padding: 0;
+    margin: 28px 65px 10px;
+    background-color: rgb(208, 208, 208);
     border-radius: 10px;
     display: flex;
     align-items: center;
-}
+    justify-content: flex-start;
+  }
+
+  .searchdiv:focus {
+    background-color: rgba(200, 200, 200, 0.2); /* Temporary slight opacity */
+    border: 1px solid red; /* Temporary thin border */
+    outline: none; /* Remove default browser focus outline */
+  }
+  
 
 header {
     display: flex;
+    margin-top: -10px;
+    margin-bottom: -40px;
 }
+
+
 
 .userlogo {
     margin-top: 40px;
-    margin-left: 100px;
-}
-
-.userlogo, .cart, .shop {
-    margin-top: 40px;
-    margin-left: 50px; 
+    margin-left: 55px; 
     margin-bottom: 30px;
 }
-
-#anotherarrange, #shops, #arrange {
-    margin-left: 20px;
+#arrange {
+    margin-left: 5px;
     position: relative;
 }
 
+.cart{
+    margin-top: 40px;
+    margin-left: 60px; 
+    margin-bottom: 30px;
+}
+
+#anotherarrange{
+    margin-left: 5px;
+    position: relative;
+}
+
+.shop {
+    margin-top: 40px;
+    margin-left: 60px; 
+    margin-bottom: 30px;
+}
+
+#shops{
+    margin-left: 6px;
+    position: relative;
+}
+
+
 .vertical {
-    margin-left: 8px;
+    margin-left: 50px;
     position: relative;
     bottom: -45px;
 }
@@ -94,45 +127,67 @@ header {
     display: flex;
     position: relative;
     margin-bottom: 20px;
+    
 }
 
 #fontincrease {
-    font-size: large;
+    font-size: larger;
     margin-top: 20px;
 }
 
+input{
+    color: red;
+}
 #second {
+    border: 10px solid rgb(227, 225, 225);
+    border-radius: 5px;
     background-color: white;
     display: flex;
     justify-content: flex-start;
-}
-
-#tomatoes {
-    margin-left: 80px;
 }
 
 #item1, #item2, #item3, #item4, #item5 {
     text-align: center;
 }
 
+#tomatoes {
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
 #smartphones {
-    margin-left: 105px;
+    margin-left: 70px;
+    margin-top: 20px;
 }
 
 #fashion {
-    margin-left: 130px;
+    margin-left: 80px;
+    margin-top: 20px;
 }
 
 #electronics {
-    margin-left: 160px;
+    margin-left: 90px;
+    margin-top: 20px;
 }
 
 #appliances {
-    margin-left: 190px;
+    margin-left: 100px;
+    margin-top: 20px;
 }
 
-#toys {
-    margin-left: 200px;
+#furniture {
+    margin-left: 110px;
+    margin-top: 20px;
+}
+
+#travel {
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+#toysandfurniture {
+    margin-left: 125px;
+    margin-top: 20px;
 }
 
 .third{
