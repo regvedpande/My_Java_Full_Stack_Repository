@@ -1,7 +1,7 @@
 #container {
     height: 100%;
     width: 100%;
-    border: 1px solid  rgb(13, 13, 211);
+    
     
 }
 .ap{
@@ -190,28 +190,36 @@ input{
     margin-top: 20px;
 }
 
+.carousel-inner{
+    border-top: 8px solid rgb(227, 225, 225);
+    border-bottom: 17px solid rgb(227, 225, 225);
+    border-left: 10px solid rgb(227, 225, 225);
+    border-right: 10px solid rgb(227, 225, 225);
+}
+
 .third{
     background-color: white;
-    margin-top: 15px;
+    margin-top: 0px;
     display: flex;
     justify-content: flex-start;
-    margin-left: 30px;
+    margin-left: 0px;
+    margin-right: 300px;
+    border-left: 12px solid rgb(227, 225, 225);
+    padding-top: 16px;
+    padding-left: 18px;
 
 }
 
 #fourth{
-    display:flex;
+    display: flex;
+    border-left: 12px solid rgb(227, 225, 225);
+    border-bottom: 16px solid rgb(227, 225, 225);
+    margin-bottom: 0px;
+    margin-right: -412px
 }
-.smartphone15{
-border: 1px solid rgb(166, 166, 166);
-display: flex;
-    margin-left: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    padding-right: -100px;
-    margin-bottom: 40px;
 
-}
+
+
 
 #phonecaption{
 display: flex;
@@ -220,34 +228,570 @@ margin-right: 300px;
 
 }
 
-.macbook{
-    margin-left: 10px;
-    margin-top: 10px;
-    display: flex;
-    border: 1px solid rgb(166, 166, 166);
-    margin-bottom: 40px;
+.nikon{
+    border: 1px solid rgb(227, 225, 225);
+    display: grid;
+        margin-left: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        padding-right: -100px;
+        margin-bottom: 55px;
+
+    
 }
 
-.camera{
-    margin-left: 10px;
-    margin-top: 0px;
-    display: flex;
-    border: 1px solid rgb(166, 166, 166);
-    margin-bottom: 40px;
+#nikondes{
+margin-left: 10px;
+margin-top: 22px;
+}
+#subbottom{
+    margin-top: -18px;
+    margin-left: 45px;
+    
+}
+.quickheal{
+    border: 1px solid rgb(227, 225, 225);
+    display: grid;
+        margin-left: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        padding-right: 10px;
+        padding-left: 40px;
+        margin-bottom: 55px;
+}
+
+#subbottom2{
+    padding-right: 8px;
+    padding-top: 10px;
+    margin-left: -5px;
+}
+#subbottomanother{
+    margin-top: -20px;
+    margin-left: 45px;
+}
+
+
+.keyboard{
+    border: 1px solid rgb(227, 225, 225);
+    display: grid;
+        margin-left: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        padding-right: 10px;
+        padding-left: 40px;
+        margin-bottom: 55px;
+}
+
+#subbottom3{
+    padding-top: 28px;
+    margin-left: 25px;
+}
+#subbottomanother2{
+    margin-top: -20px;
+    margin-left: 40px;
 }
 
 .printer{
-    margin-left: 10px;
-    margin-top: 0px;
-    display: flex;
-    border: 1px solid rgb(166, 166, 166);
-    margin-bottom: 40px;
+    border: 1px solid rgb(227, 225, 225);
+    display: grid;
+    margin-left: 11px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 16px;
+    margin-bottom: 55px;
+}
+
+#subbottom4{
+    padding-top: 68px;
+    padding-left: 20px;
+    margin-left: 25px;
+}
+#subbottomanother3{
+    margin-top: -20px;
+    padding-left: 5px;
+    margin-left: 40px;
 }
 
 .ssd{
-    margin-left: 60px;
-    margin-top: 10px;
+    border: 1px solid rgb(227, 225, 225);
+    display: grid;
+    margin-left: 11px;
+    margin-top: 11px;
+    border-radius: 5px;
+    padding-top: 14px;
+    padding-right: 23px;
+    padding-left: 50px;
+    margin-bottom: 55px;
+}
+
+#subbottom5{
+    padding-top: 28px;
+    padding-left: -15px;
+    margin-left: 12px;
+}
+#subbottomanother4{
+    margin-top: -20px;
+    padding-left: -10px;
+    margin-left: 10px;
+}
+
+.fg{
+   
+margin-left: 45px;
+margin-top: -48px;
+margin-right: 90px;
+border-right: 10px solid rgb(227, 225, 225);
+border-left: 13px solid rgb(227, 225, 225);
+border-bottom: 10px solid rgb(227, 225, 225);
+
+
+}
+
+#flex{
     display: flex;
-    border: 1px solid rgb(166, 166, 166);
-    margin-bottom: 40px;
+    margin-left: 1095px;
+    margin-top: -365px;
+}
+
+
+
+
+#fifth{
+    display:flex;
+
+    border-left: 12px solid rgb(227, 225, 225);
+    border-bottom: 12px solid rgb(227, 225, 225);
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    margin-right: 300px;
+}
+
+
+
+
+#phonecaption{
+display: flex;
+margin-top: 200px;
+margin-right: 300px;
+
+}
+
+.nikon{
+    border: 1px solid rgb(227, 225, 225);
+    display: grid;
+        margin-left: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        padding-right: -100px;
+        margin-bottom: 55px;
+
+    
+}
+
+#nikondes{
+margin-left: 10px;
+margin-top: 22px;
+}
+#subbottom{
+    margin-top: -18px;
+    margin-left: 45px;
+    
+}
+.quickheal{
+    border: 1px solid rgb(227, 225, 225);
+    display: grid;
+        margin-left: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        padding-right: 10px;
+        padding-left: 40px;
+        margin-bottom: 55px;
+}
+
+#subbottom2{
+    padding-right: 8px;
+    padding-top: 10px;
+    margin-left: -5px;
+}
+#subbottomanother{
+    margin-top: -20px;
+    margin-left: 45px;
+}
+
+
+
+.keyboard{
+    border: 1px solid rgb(227, 225, 225);
+    display: grid;
+        margin-left: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        padding-right: 10px;
+        padding-left: 40px;
+        margin-bottom: 55px;
+}
+
+#subbottom3{
+    padding-top: 28px;
+    margin-left: 25px;
+}
+#subbottomanother2{
+    margin-top: -20px;
+    margin-left: 40px;
+}
+
+.printer{
+    border: 1px solid rgb(227, 225, 225);
+    display: grid;
+    margin-left: 11px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 16px;
+    margin-bottom: 55px;
+}
+
+#subbottom4{
+    padding-top: 68px;
+    padding-left: 20px;
+    margin-left: 25px;
+}
+#subbottomanother3{
+    margin-top: -20px;
+    padding-left: 5px;
+    margin-left: 40px;
+}
+
+.ssd{
+    border: 1px solid rgb(227, 225, 225);
+    display: grid;
+    margin-left: 11px;
+    margin-top: 11px;
+    border-radius: 5px;
+    padding-top: 14px;
+    padding-right: 23px;
+    padding-left: 50px;
+    margin-bottom: 55px;
+}
+
+#subbottom5{
+    padding-top: 28px;
+    padding-left: -15px;
+    margin-left: 12px;
+}
+#subbottomanother4{
+    margin-top: -20px;
+    padding-left: -10px;
+    margin-left: 10px;
+}
+
+.sub{
+    background-color: white;
+    margin-top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0px;
+    margin-right: 300px;
+    border-left: 12px solid rgb(227, 225, 225);
+    padding-top: 16px;
+    padding-left: 18px;
+
+}
+
+#fifth1{
+    display:flex;
+    position: relative;
+    border-left: 12px solid rgb(227, 225, 225);
+    border-bottom: 12px solid rgb(227, 225, 225);
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    margin-right: -700px;
+}
+
+.teddy{
+    border: 1px solid rgb(227, 225, 225);
+    display: grid;
+        margin-left: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        padding-right: -100px;
+        margin-bottom: 55px;
+
+    
+}
+
+#ted1{
+margin-left: 60px;
+margin-top: 22px;
+}
+#ted2{
+    margin-top: -18px;
+    margin-left: 45px;
+    
+}
+.peanut{
+    border: 1px solid rgb(227, 225, 225);
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-right: 38px;
+    padding-left: 38px;
+    margin-bottom: 55px;
+    
+}
+
+#pea1{
+    padding-right: 8px;
+    padding-top: 10px;
+    margin-left: 15px;
+}
+#pea2{
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+
+
+.cycle{
+    border: 1px solid rgb(227, 225, 225);
+    display: grid;
+        margin-left: 5px;
+        margin-top: 10px;
+        border-radius: 5px;
+        padding-right: 10px;
+        padding-left: 15px;
+        padding-top: 30px;
+        margin-bottom: 55px;
+}
+
+#cyc1{
+    padding-top: 68px;
+    margin-left: 38px;
+}
+#cyc2{
+    margin-top: -20px;
+    margin-left: 40px;
+}
+
+.rc{
+    border: 1px solid rgb(227, 225, 225);
+    display: grid;
+    margin-left: 11px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 16px;
+    margin-bottom: 55px;
+}
+
+#rc1{
+    padding-top: 48px;
+    padding-left: 12px;
+    margin-left: 20px;
+}
+#rc2{
+    margin-top: -20px;
+    padding-left: 0px;
+    margin-left: 35px;
+}
+
+.gym{
+    border: 1px solid rgb(227, 225, 225);
+    display: grid;
+    margin-left: 11px;
+    margin-top: 11px;
+    border-radius: 5px;
+    padding-top: 14px;
+    padding-right: 23px;
+    padding-left: 50px;
+    margin-bottom: 55px;
+}
+
+#gym1{
+    padding-top: 28px;
+    padding-left: -5px;
+    margin-left: 5px;
+}
+#gym2{
+    margin-top: -20px;
+    padding-left: -10px;
+    margin-left: 10px;
+}
+
+.studio{
+    border: 1px solid rgb(227, 225, 225);
+    display: grid;
+    margin-left: 12px;
+    margin-top: 11px;
+    border-radius: 5px;
+    padding-top: 14px;
+    padding-right: 3px;
+    padding-left: 30px;
+    margin-bottom: 55px;
+}
+
+#studio1{
+    padding-top: 28px;
+    padding-left: -15px;
+    margin-left: 36px;
+}
+#studio2{
+    margin-top: -20px;
+    padding-left: -10px;
+    margin-left: 30px;
+}
+
+.arrow{
+    border: 1px solid rgb(161, 161, 161);
+    display: grid;
+    margin-left: 11px;
+    margin-top: 80px;
+    border-radius: 5px;
+    padding-top: 41px;
+    padding-right: 13px;
+    padding-left: 16px;
+    margin-bottom: 143px;
+}
+
+.sixth{
+    display: flex;
+    border: 2px solid black;
+    margin-right: 260px;
+    padding-bottom: 2px;
+
+}
+
+.win{
+    margin-top: 2%;
+    margin-left: 60px;
+}
+
+.upper{
+    display: flex;
+    margin-top: 59px;
+    margin-left: -193px;
+}
+
+.jackets{
+    border: 1px solid black;
+}
+.jeans{
+    margin-left: 53px;
+    padding-left: 28px;
+    border: 1px solid black;
+    padding-right: 25px;
+    padding-top: 10px;  
+} 
+
+
+.sub1{
+    background-color: white;
+    margin-top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0px;
+    margin-right: 100px;
+    border-left: 12px solid rgb(227, 225, 225);
+    padding-top: 16px;
+    padding-left: 18px;
+}
+.grid-container1{
+    display: flex;
+    margin-top: 20px;
+    border-left: 12px solid rgb(227, 225, 225);
+    margin-left: 0px;
+    border-right: 12px solid rgb(227, 225, 225);
+    padding-left: 10px;
+}
+
+.subgrid1{
+    border: 2px solid rgb(227, 225, 225);
+    padding-top: 28px;
+    padding-left: -5px;
+    margin-left: 5px;
+}
+
+#jack{
+    margin-left: 60px;
+    margin-top: 22px;
+    }
+    #jack2{
+        margin-top: -18px;
+        margin-left: 45px;
+        
+    }
+
+.subgrid2{
+    border: 2px solid  rgb(227, 225, 225);
+    padding-top: 28px;
+    padding-left: -5px;
+    margin-left: 5px;
+    }
+
+    #lea{
+        margin-left: 45px;
+        margin-top: 40px;
+        }
+        #lea2{
+        margin-top: -20px;
+        margin-left: 45px;
+        
+        }
+
+
+.grid-container2{
+    display: flex;
+    margin-top: -2px;
+    border-left: 12px solid rgb(227, 225, 225);
+    margin-left: 0px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+
+.subgrid3{
+    border: 2px solid  rgb(227, 225, 225);
+    padding-top: 28px;
+    padding-left: -5px;
+    margin-left: 5px;
+}
+
+#lap{
+    margin-left: 60px;
+    margin-top: 22px;
+    }
+    #lap2{
+        margin-top: -18px;
+        margin-left: 45px;
+        
+    }
+
+.subgrid4{
+    border: 2px solid  rgb(227, 225, 225);
+    padding-top: 28px;
+    padding-left: -5px;
+    margin-left: 5px;
+}
+
+#sne{
+    margin-left: 60px;
+    margin-top: 38px;
+    }
+    #sne1{
+        margin-top: -19px;
+        margin-left: 45px;
+        
+    }
+
+.righ{
+    display: flex;
+    margin-left: 500px;
+    margin-top: -650px;
+    margin-right: 100px;
 }
