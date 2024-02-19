@@ -789,9 +789,9 @@ margin-top: 22px;
         
     }
 
-.righ{
-    display: flex;
-    margin-left: 500px;
-    margin-top: -650px;
-    margin-right: 100px;
-}
+    .righ {
+        display: flex;
+        margin-left: 500px;
+        margin-top: -650px;
+
+    }
