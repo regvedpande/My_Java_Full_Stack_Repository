@@ -35,3 +35,9 @@ const dictionary = {
 };
 
 console.log(dictionary);
+
+console.log("You can also access elements like this ");
+
+console.log(dictionary.abate);
+//or
+console.log(dictionary['eclectic']);
