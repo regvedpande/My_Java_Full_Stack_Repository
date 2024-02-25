@@ -23,11 +23,6 @@ console.log("After Updation");
 store.key = 460;
 console.log(store);
 
-//You can insert value like this above as store is a reference to the object
-store['address'] = "Nagpur";
-console.log("After adding Address we get");
-console.log(store);
-
 /*Note : When you declare an object within a block, it's only accessible within that block,
 helping to prevent naming conflicts and accidental overwrites.*/
 //Creating a Word Meaning Dictionary of 5 Words
@@ -40,10 +35,3 @@ const dictionary = {
 };
 
 console.log(dictionary);
-
-console.log("You can also access elements like this ");
-
-console.log(dictionary.abate);
-//or
-console.log(dictionary['eclectic']);
-
