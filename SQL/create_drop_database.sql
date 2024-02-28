@@ -1,0 +1,3 @@
+create database college;
+CREATE DATABASE EMPLOYEES;
+DROP DATABASE EMPLOYEES;
