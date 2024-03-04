@@ -12,6 +12,7 @@ public class ArrayListEngineeringBranches {
         LinkedList<String> engineeringdisciplines = new LinkedList<String>();
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("This is the list of the Engoneering Majors you want to add : ");
         System.out.println("How many Engineering Disciplines you want to add : " );
         int count  = Integer.parseInt(br.readLine());
 

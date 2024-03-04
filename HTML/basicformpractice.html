@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/action.php">
+        Name : <input type="text" placeholder = "Enter Your Name"><br><br>
+        Password : <input type="password" placeholder = "Enter Your Password"><br><br>
+        <!-- Remember the value and the Name at last must be same as value = "" goes to the server 
+        as server cannot see value at last and user cannot see value = " "-->
+
+        <!-- The "name" attribute in the radio input elements groups them together, ensuring that 
+            only one radio button within the same group (with the same "name" attribute) can be 
+            selected at a time. This allows users to choose one option from a set of radio buttons
+            and helps in organizing and handling form data effectively. -->
+
+        Choose your Gender :<input type="radio" value="Male" name="gender">Male
+                            <input type="radio" value="Female" name="gender">Female <br>
+        <!-- If you want to create separate Radio buttons with separate id use label and id-->
+        <!-- In HTML, the "label" element associates text with a radio input, 
+            providing a clickable area that selects the associated radio button. (helps people with disabilities) -->
+        <br><label for="1">
+            DOB : <input type="radio" value="1999" name="year" id="1" >1999
+        </label>
+
+        <label for="2">
+            <input type="radio" value="2000" name="year" id="2" >2000
+        </label>
+
+        <label for="3">
+         <input type="radio" value="2001" name="year" id="3" >2001
+        </label>
+
+        <h3>Choice of Subjects</h3>
+        <label for="CSE">
+        <input type="checkbox" value="Computer Science" name="subjects" id="CSE" >Computer Science
+        </label><br>
+
+        <label for="EEE">
+            <input type="checkbox" value="Electrical Engineering" name="subjects" id="EEE" >Electrical Engineering
+        </label><br>
+
+        <label for="ME">
+        <input type="checkbox" value="Mechanical Engineering" name="subjects" id="ME" >Mechanical Engineering
+        </label>
+
+        <h4>Select Your City</h4>
+        <select  name="city" id="city">
+
+            <option value="cities">Nagpur</option>
+            <option value="cities">Pune</option>
+            <option value="cities">Mumbai</option>
+            <option value="cities">Nashik</option>
+        </select>
+
+        <h3>Feedback</h3>
+        <!-- The textarea element represents a multiline plain text edit control for the element's raw value.  -->
+        <textarea name="feedback" id="feed" placeholder="Please provide your valuable feedback here...." cols="40" ></textarea>
+        <br>
+        <input type="button" value="Submit">
+        <input type="button" value="Reset">
+
+
+    </form>
+</body>
+</html>
