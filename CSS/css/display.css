@@ -1,0 +1,28 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+div{
+    /* Note : The below Height, Width, Margin and Padding wont work when display is set to Inline */
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    margin: 25px;
+    padding: 25px;
+    /* Note : In Inline we cannot set Height, Width, Margin and Padding so we can use "Inline Block" */
+    /* display: inline;  */
+    display: inline-block; /* Now it will work*/
+}
+
+#box1{
+    background-color: darkorange;
+}
+
+#box2{
+    background-color: rgb(255, 125, 125);
+}
+
+#box3{
+    background-color: rgb(131, 214, 247);
+}
