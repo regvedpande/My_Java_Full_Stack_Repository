@@ -180,11 +180,11 @@ font-size: 23px;
     height: 400px;
     width: 23%;
     background-color: white;
-    padding: 20px 0px 15px; /* Added semicolon here */
+    padding: 20px 0px 15px; 
     margin-top: 15px;
 }
 
-.box-img { /* Corrected class name from .box-image to .box-img */
+.box-img {
     height: 300px;
     background-image: cover;
     background-repeat: no-repeat;
