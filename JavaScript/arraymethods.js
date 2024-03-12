@@ -17,3 +17,7 @@ console.log(num.pop())
 
 // The push() method adds a new element to an array (at the end):
 console.log(num.push("8"))
+
+for (const iterator of num) {
+    console.log(iterator);
+}
