@@ -17,4 +17,3 @@ let save = text;
 
 let newtext = sen.replace(sen[store], save.charAt());
 console.log(newtext);
-
