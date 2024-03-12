@@ -22,3 +22,4 @@ This repository serves as a playground for me to explore and improve my skills i
 
 Happy coding! 
 
+<a href="https://app.daily.dev/regvedpande"><img src="https://api.daily.dev/devcards/v2/fGIoVMhZFsRdAApy4LTRn.png?r=ycy&type=wide" width="652" alt="Regved Pande's Dev Card"/></a>
