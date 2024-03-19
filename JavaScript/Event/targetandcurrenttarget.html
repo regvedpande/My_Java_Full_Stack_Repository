@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+#first{
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    }
+
+#second{
+        width: 250px;
+        height: 250px;
+        background-color: rgb(133, 223, 29);
+    }
+
+#third{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(247, 62, 21);
+    }
+
+#fourth{
+        width: 150px;
+        height: 150px;
+        background-color: rgb(220, 192, 29);
+    }
+    </style>
+
+    <div id="first">1
+        <div id="second">2
+            <div id="third">3
+                <div id="fourth">4
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("first").addEventListener("click", go = (r) => {
+        console.log("1");
+        console.log('Target = ' + r.target.dataset.name);
+		console.log('CurrentTarget = ' + r.currentTarget.dataset.name);
+        }, false);
+        
+        document.getElementById("second").addEventListener("click", go = (r) => {
+        console.log("2");
+        console.log('Target = ' + r.target.dataset.name);
+        console.log('CurrentTarget = ' + r.currentTarget.dataset.name);
+        }, false);
+
+        document.getElementById("third").addEventListener("click", go = (r) => {
+        console.log("3");
+        console.log('Target = ' + r.target.dataset.name);
+        console.log('CurrentTarget = ' + r.currentTarget.dataset.name);
+        }, false);
+
+        document.getElementById("fourth").addEventListener("click", go = (r) => {
+        console.log("4");
+        console.log('Target = ' + r.target.dataset.name);
+        console.log('CurrentTarget = ' + r.currentTarget.dataset.name);
+        }, false);
+    </script>
+</body>
+</html>

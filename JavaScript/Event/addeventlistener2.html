@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="oval">Click</button>
+
+    <script>
+        let input1 = () => {
+            alert("Hello World!");
+        }
+
+        let input2 = () => {
+            alert("Hello Universe!");
+        }
+
+        let store = document.getElementById("oval");
+        store.addEventListener("click", input1);
+        store.addEventListener("click", input2);
+    </script>
+</body>
+</html>

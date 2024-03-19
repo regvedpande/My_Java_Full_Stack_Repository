@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv" style="width: 200px; height:200px; background-color: burlywood">
+		<a href="http://www.apple.com" id="mylink">Click and Open GeekyShows</a>
+    </div>
+
+    <script>
+        let regved = (r) =>{
+            r.preventDefault();
+        }
+
+        let kaustubh = (r) =>{
+            this.style.backgroundColor = "green";
+        }
+
+        let x = document.getElementById("mydiv");
+        let y = document.getElementById("mylink");
+        x.addEventListener("click", kaustubh, false);
+        y.addEventListener("click", regved, false);
+    </script>
+</body>
+</html>
