@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="first" style="height: 200px; width: 150px; background-color: cadetblue;">
+        <div id="second" style="height: 150px; width: 120px; background-color: cornflowerblue;"></div>
+    </div>
+
+    <script>
+        let regved = (r) =>{
+            console.log(r.type);
+        }
+
+        let ayush = (r) =>{
+            console.log(r.type);
+        }
+
+        let first = document.getElementById("first");
+        let second = document.getElementById("second");
+
+        first.addEventListener("mousedown", regved, false);
+		first.addEventListener("mouseup", regved, false);
+		first.addEventListener("click", regved, false);
+		first.addEventListener("dblclick", regved, false);
+		first.addEventListener("mouseenter", regved, false);
+		first.addEventListener("mouseleave", regved, false);
+		first.addEventListener("mouseover", regved, false);
+		first.addEventListener("mouseout", regved, false);
+		first.addEventListener("mousemove", regved, false);
+		first.addEventListener("contextmenu", regved, false);
+    </script>
+</body>
+</html>

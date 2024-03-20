@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Name:<input type="text" id="write">
+
+    <script>
+        let ref = document.getElementById("write");
+        let regved = (r) => {
+           console.log(r.type + ': ' + r.target.value);
+        }
+
+        ref.addEventListener("input", regved, false);
+    </script>
+</body>
+</html>

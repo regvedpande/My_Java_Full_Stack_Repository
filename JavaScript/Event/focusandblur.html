@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Name:<input type="text" id="first">
+
+    <script>
+        let line = document.getElementById("first");
+        let regved = (r) =>{
+            line.style.backgroundColor = "purple";
+        }
+
+        let pranav = (r) =>{
+            line.style.backgroundColor = "red";
+        }
+
+        line.addEventListener("focus", regved);
+        line.addEventListener("blur", pranav);
+
+
+    </script>
+</body>
+</html>
