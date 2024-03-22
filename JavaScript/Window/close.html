@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="close">Close Here</button>
+    <script>
+        let store = window.open("http://www.apple.com","_blank","height = 300px, width = 250px");
+        let regved = () => {
+            store.close();
+        }
+        document.getElementById("close").addEventListener("click", regved);
+    </script>
+</body>
+</html>

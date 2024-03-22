@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Indian Cuisine</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    #map { 
+      position: absolute; 
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    #searchContainer { 
+      position: absolute; 
+      top: 20px; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      margin-left: -150px; /* Adjust margin-left for left alignment */
+      z-index: 1000; 
+      width: 80%; 
+      text-align: center;
+      display: flex; /* Add display flex */
+      justify-content: center; /* Align items in the center */
+      align-items: center; /* Align items vertically */
+    }
+    .searchBar { 
+      padding: 12px; 
+      border-radius: 30px; 
+      border: 2px solid #007bff; 
+      font-size: 18px; 
+      width: 300px; /* Adjust width as needed */
+      margin: 0 10px; /* Add margin to separate elements */
+    }
+    .searchButton { 
+      padding: 12px 24px; 
+      border: none; 
+      background-color: #007bff; 
+      color: #fff; 
+      border-radius: 30px; 
+      font-size: 18px; 
+      cursor: pointer; 
+    }
+    #overlay { 
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      height: 100%; 
+      background-color: rgba(255, 255, 255, 0.7); 
+      z-index: 1000; 
+      display: none; 
+    }
+    .loader { 
+      position: absolute; 
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+    }
+    .restaurantList { 
+      position: absolute; 
+      bottom: 20px; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      z-index: 1000; 
+      background-color: rgba(255, 255, 255, 0.9); 
+      padding: 10px; 
+      border-radius: 5px; 
+      box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+    }
+    .restaurantItem { 
+      margin-bottom: 5px; 
+      padding: 8px 12px; 
+      border-radius: 5px; 
+      background-color: #007bff; 
+      color: #fff; 
+      font-weight: bold; 
+      cursor: pointer; 
+      transition: background-color 0.3s ease; 
+    }
+    .restaurantItem a { 
+      color: #fff; 
+      text-decoration: none; 
+    }
+    .restaurantItem:hover { 
+      background-color: #0056b3; 
+    }
+  </style>
+</head>
+<body>
+
+<div id="searchContainer">
+  <input type="text" id="cityInput" class="searchBar" placeholder="Enter city (e.g., Mumbai)">
+  <input type="text" id="areaInput" class="searchBar" placeholder="Enter area (e.g., Bandra)">
+  <button onclick="searchRestaurants()" class="searchButton">Search</button>
+</div>
+
+<div id="map"></div>
+
+<div id="overlay">
+  <div class="loader">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/loader.gif" alt="Loading...">
+  </div>
+</div>
+
+<div id="restaurantList" class="restaurantList" style="display: none;"></div>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script>
+  var map = L.map("map").setView([21.1401, 79.0820], 6); // Default view set to India
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  function showLoading() {
+    document.getElementById("overlay").style.display = "block";
+  }
+
+  function hideLoading() {
+    document.getElementById("overlay").style.display = "none";
+  }
+
+  function searchRestaurants() {
+    showLoading();
+
+    var city = document.getElementById('cityInput').value;
+    var area = document.getElementById('areaInput').value;
+
+    // Use Nominatim API for geocoding
+    fetch('https://nominatim.openstreetmap.org/search?q=' + area + ', ' + city + ', India&format=json')
+      .then(response => response.json())
+      .then(locationData => {
+        if (locationData.length > 0) {
+          var lat = parseFloat(locationData[0].lat);
+          var lon = parseFloat(locationData[0].lon);
+
+          // Query Overpass API for nearby restaurants within a radius of 1000 meters
+          fetch(`https://overpass-api.de/api/interpreter?data=[out:json];(node(around:10000,${lat},${lon})[amenity=restaurant];node(around:10000,${lat},${lon})[amenity=cafe];);out;`)
+            .then(response => response.json())
+            .then(restaurantData => {
+              hideLoading();
+
+              if (restaurantData.elements.length > 0) {
+                var restaurantList = document.getElementById('restaurantList');
+                restaurantList.innerHTML = ''; // Clear previous results
+
+                // Display restaurant list
+                restaurantData.elements.forEach(element => {
+                  var restaurantName = element.tags.name || 'Unnamed Restaurant';
+                  var website = element.tags.website ? element.tags.website : '#';
+                  var listItem = document.createElement('div');
+                  listItem.classList.add('restaurantItem');
+                  listItem.innerHTML = '<a href="' + website + '" target="_blank">' + restaurantName + '</a>';
+                  restaurantList.appendChild(listItem);
+                });
+
+                restaurantList.style.display = 'block'; // Show the list
+              } else {
+                hideLoading();
+                alert('No restaurants found within the area.');
+              }
+            })
+            .catch(error => {
+              hideLoading();
+              console.error('Error fetching restaurant data:', error);
+            });
+        } else {
+          hideLoading();
+          alert('Location not found.');
+        }
+      })
+      .catch(error => {
+        hideLoading();
+        console.error('Error fetching location data:', error);
+      });
+  }
+</script>
+
+</body>
+</html>
+
+
+
