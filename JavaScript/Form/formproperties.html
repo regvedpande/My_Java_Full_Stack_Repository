@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="myform" id="sub">
+        Name : <input type="text" name="regved" id="one"><br>
+        Password : <input type="password" name="pande" id="two"><br>
+        <input type="button" name="but" value="Reset" onclick="resetForm()"> 
+    </form>
+
+    <script>
+        let resetForm = () => {
+            let myform = document.getElementById('myform');
+            myform.reset();
+        }
+    </script>
+</body>
+</html>

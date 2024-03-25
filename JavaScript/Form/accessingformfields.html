@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="myform" id="sub">
+        Name : <input type="text" name="regved" id="one"><br>
+        Password : <input type="password" name="pande" id="two"><br>
+        <input type="button" name="but" value="Reset" onclick="resetForm()"> 
+    </form>
+
+    <form action="" id="myform1" id="sub1">
+        Name : <input type="text" name="regved" id="one1"><br>
+        Password : <input type="password1" name="pande1" id="two1"><br>
+        <input type="button" name="but1" value="Reset1" onclick="resetForm()"> 
+    </form>
+
+    <script>
+        //with id
+        let access = document.getElementById('one');
+        console.log(access.name);
+        console.log(access.type);
+        console.log(access.id);
+
+        //with elementname
+        let anotheraccess = document.myform.elements[0]; //can also use name 
+        console.log(anotheraccess.name);
+        console.log(anotheraccess.type);
+        console.log(anotheraccess.id);
+
+    </script>
+</body>
+</html>
