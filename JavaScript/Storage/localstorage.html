@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Technocrats Solutions</title>
+</head>
+
+<body>
+	<h1>Local Storage</h1>
+	<script>
+/* Local Storage is a feature that allows storing key-value pairs directly in a web browser.
+    The provided code utilizes this feature by setting two key-value pairs, namely 'regved' and
+    'pande', using the `localStorage.setItem()` method. It then retrieves and logs the value 
+    associated with the 'regved' key using `localStorage.getItem()`, along with other details
+    such as the first key and the total number of keys in local storage. Additionally, the code
+    includes options to remove specific items or clear all items from local storage when necessary.*/
+
+		// Setting items in localStorage
+		localStorage.setItem('regved', 'pande');
+		localStorage.setItem('regregd@outlook.com', '9049874883');
+		
+		// Retrieving and logging data from localStorage
+		console.log("Username:", localStorage.getItem('regved'));
+		console.log("First key in localStorage:", localStorage.key(0));
+		console.log("Number of items in localStorage:", localStorage.length);
+		
+		// Removing an item from localStorage
+		localStorage.removeItem('email');
+		
+		// Clearing all items from localStorage
+		// localStorage.clear();
+	</script>
+</body>
+
+</html>

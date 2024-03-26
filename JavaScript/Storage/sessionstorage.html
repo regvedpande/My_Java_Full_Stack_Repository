@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Technocrats Solutions</title>
+</head>
+
+<body>
+	<h1>Session Storage</h1>
+	<script>
+
+        /* Session Storage is another feature that allows storing key-value pairs, similar to
+        local storage, but the data persists only for the duration of the page session. The
+        provided code utilizes session storage by setting two key-value pairs, 'regved' and 'regregd@outlook.com',
+        using the `sessionStorage.setItem()` method. It then retrieves and logs the value associated
+        with the 'regved' key using `sessionStorage.getItem()`, along with other details such as the
+        second key and the total number of keys in session storage. Additionally, the code includes 
+        options to remove specific items or clear all items from session storage when necessary.
+        */
+
+		// Logging the sessionStorage object
+		console.log(sessionStorage);
+
+		// Setting items in sessionStorage
+		sessionStorage.setItem('regved', 'pande');
+		sessionStorage.setItem('regregd@outlook.com', '9049874883');
+
+		// Retrieving and logging data from sessionStorage
+		console.log("Name:", sessionStorage.getItem('regved'));
+		console.log("Second key in sessionStorage:", sessionStorage.key(1));
+		console.log("Number of items in sessionStorage:", sessionStorage.length);
+
+		// Removing an item from sessionStorage
+		sessionStorage.removeItem('9049874883');
+
+		// Clearing all items from sessionStorage
+		// sessionStorage.clear();
+	</script>
+</body>
+
+</html>
+

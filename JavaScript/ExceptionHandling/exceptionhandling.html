@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Define a function that attempts to divide two numbers
+function divideNumbers(a, b) {
+    try {
+        // Attempt the division
+        if (b === 0) {
+            throw new Error("Division by zero is not allowed.");
+        }
+        let result = a / b;
+        console.log("Result of division:", result);
+    } catch (error) {
+        // Handle the error
+        console.error("An error occurred:", error.message);
+    } finally {
+        // Cleanup or finalize tasks
+        console.log("Division operation completed.");
+    }
+}
+
+// Test the divideNumbers function with different inputs
+console.log("Test Case 1:");
+divideNumbers(10, 2); // Output: Result of division: 5, Division operation completed.
+
+console.log("\nTest Case 2:");
+divideNumbers(8, 0); // Output: An error occurred: Division by zero is not allowed., Division operation completed.
+
+console.log("\nTest Case 3:");
+divideNumbers(15, 3); // Output: Result of division: 5, Division operation completed.
+
+    </script>
+</body>
+</html>
