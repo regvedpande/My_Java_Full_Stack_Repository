@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Number Order Game</title>
+    <!-- External stylesheet for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <!-- Information section -->
+        <div class="info-section">
+            <!-- Player registration -->
+            <div class="player-registration">
+                <label for="playerName">Name:</label>
+                <input type="text" id="playerName" placeholder="Enter your name">
+                <button id="submitName">Submit</button>
+            </div>
+            <!-- Scoreboard -->
+            <div id="scoreboard"></div>
+            <!-- Timer display -->
+            <div class="timer">
+                <span id="minutes">05</span>:<span id="seconds">00</span>
+            </div>
+        </div>
+        <!-- Grid container for the game -->
+        <div class="grid-container">
+            <div class="grid"></div>
+        </div>
+        <!-- Button for resetting the game -->
+        <div class="buttons">
+            <button id="resetButton" class="red-button">Reset</button>
+        </div><br>
+    </div>
+    <!-- JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>

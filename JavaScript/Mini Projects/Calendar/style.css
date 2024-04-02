@@ -1,0 +1,46 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    text-align: center;
+    background-color: #f0f5f5; /* Soft background */
+}
+
+.container {
+    margin: 50px auto;
+    width: 450px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #304075;  /* A shade of blue */
+    margin-bottom: 25px;
+}
+
+input[type="date"], 
+input[type="checkbox"], 
+button {
+    margin: 10px 5px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button {
+    background-color: #3498db; /* Softer blue */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+button:hover {
+    background-color: #2980b9; 
+}
+
+#result {
+    margin-top: 30px;
+    font-size: 1.3em;
+    font-weight: 600;   
+}

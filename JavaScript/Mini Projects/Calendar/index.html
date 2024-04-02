@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the webpage -->
+    <title>Date Calculator</title>
+    <!-- Link to an external stylesheet for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for the content -->
+    <div class="container">
+        <!-- Heading for the page -->
+        <h2>Date Calculator</h2>
+        <!-- Input field for start date -->
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date"><br>
+        <!-- Input field for end date -->
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date">
+
+        <!-- Checkbox to exclude Saturdays -->
+        <div> 
+            <input type="checkbox" id="exclude-saturday">
+            <label for="exclude-saturday">Exclude Saturdays</label>
+        </div>
+
+        <!-- Checkbox to exclude Sundays -->
+        <div> 
+            <input type="checkbox" id="exclude-sunday">
+            <label for="exclude-sunday">Exclude Sundays</label>
+        </div>
+
+        <!-- Button to trigger the calculation of total days -->
+        <button onclick="calculateDays()">Calculate Total Days</button>
+
+        <!-- Placeholder for the result of the calculation -->
+        <p id="result"></p>
+    </div>
+
+    <!-- Include JavaScript file for functionality -->
+    <script src="script.js"></script>
+
+</body>
+</html>
