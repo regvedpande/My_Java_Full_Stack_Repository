@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tree</title>
+    </head>
+    <body>
+        <h1>We are Learning JS</h1>
+        <h1>Subscribe Technocrats Solutions</h1>
+        <h2>Now</h2>
+        <p id="technocrats">Hello <span>Technocrats Solutions</span> 
+            <em>World</em><span>Youtube</span> 
+        <span>Hello there</span></p>
+        <p id="find"><span>Bye</span> Technocrats Solutions</p>
+        <div>
+            <p>1st p inside div</p>
+            <p>2nd p inside div</p>
+        </div>
+    
+    <script>
+        // more specific
+        let getSpan = document.getElementById("technocrats");
+        let result = getSpan.getElementsByTagName("span");
+		// let result = document.getElementById("technocrats").getElementsByTagName("span");
+        document.write(result);
+        console.log(result);
+    </script>
+    </body>
+</html>
+
+
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title class="technocrats">Tree</title>
+    </head>
+    <body>
+        <h1>We are Learning JS</h1>
+        <h1 class="technocrats myclass">Subscribe Technocrats Solutions</h1>
+        <h2>Now</h2>
+        <p class="technocrats">Hello <span>Technocrats Solutions</span> <em>World</em><span>Youtube</span> </p>
+        <p class="myclass"><span>Bye</span> Technocrats Solutions</p>
+        <div id="show">
+            <p>1st p inside div</p>
+            <p class="technocrats">2nd p inside div</p>
+            <p class="technocrats myclass">3rd p inside div</p>
+        </div>
+    
+    <script>
+        // more specific
+        let getShow = document.getElementById("show");//div
+        let result = getShow.getElementsByClassName("technocrats");
+
+        // let result = document.getElementById("show").getElementsByClassName("technocrats");
+        document.write(result);
+        console.log(result);
+    </script>
+    </body>
+</html>
+
