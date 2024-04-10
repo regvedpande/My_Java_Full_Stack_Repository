@@ -46,7 +46,7 @@ getdough((dough) => {
         getsauce((sauce) => {
             gettoppings((toppings) => {
                 getall(dough, cheese, sauce, toppings, (pizza) => {
-                    console.log("Pizza is ready: " + pizza + "=" + 'Yum Yum 😋🍕');
+                    console.log("Pizza is ready: " + 'Yum Yum 😋🍕');
                 });
             });
         });

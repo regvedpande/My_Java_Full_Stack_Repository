@@ -1,37 +1,64 @@
-package com.mkpits.model;
+package com.mkpits.jdbc;
 
 public class Student {
-    private String firstName;
-    private String lastName;
-    private boolean isGoldCustomer;
 
-    public Student(String firstName, String lastName, boolean isGoldCustomer) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.isGoldCustomer = isGoldCustomer;
-    }
+	private int id;
+	private String firstName;
+	private String lastName;
+	private String email;
+	
+//	We create such modal class to get and set data in JSP
+	
+	public Student(int id, String firstName, String lastName, String email) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+	}
+	
+	public Student(String firstName, String lastName, String email) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+	}
 
-    public String getFirstName() {
-        return firstName;
-    }
+	public int getId() {
+		return id;
+	}
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+	public void setId(int id) {
+		this.id = id;
+	}
 
-    public String getLastName() {
-        return lastName;
-    }
+	public String getFirstName() {
+		return firstName;
+	}
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
 
-    public boolean isGoldCustomer() {
-        return isGoldCustomer;
-    }
+	public String getLastName() {
+		return lastName;
+	}
 
-    public void setGoldCustomer(boolean isGoldCustomer) {
-        this.isGoldCustomer = isGoldCustomer;
-    }
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
+	}
+	
 }
