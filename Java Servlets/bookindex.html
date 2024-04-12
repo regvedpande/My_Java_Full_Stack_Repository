@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Library Catalog</title>
+<style>
+   /* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+
+header {
+    background-color: #ff5733; /* Orange */
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    color: #fff; /* White */
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #ccc; /* Grey */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    width: 150px;
+    margin-left: 350px;
+}
+
+nav a {
+    color: #333; /* Dark Grey */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+.book-list {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #ff5733; /* Orange */
+    color: #fff; /* White */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light Grey */
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0; /* Darker Grey */
+}
+   
+</style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Enter the World of Regved's Favourite Book Catalogue</h1>
+        <nav>
+            <a href="BooksController">Browse Collection</a>
+        </nav>
+    </header>
+    <main>
+        <section class="book-list">
+            <h2>Regved's Book List in the Table are Arranged According to their</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows with book details will be populated here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</div>
+</body>
+</html>
