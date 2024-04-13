@@ -18,55 +18,38 @@ import javax.sql.DataSource;
 @WebServlet("/StudentControllerServlet")
 public class StudentControllerServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public StudentControllerServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-    
-    
-    private StudentDbUtil studentDbUtil;
-    
-    @Resource(name="jdbc/web_student_tracker")
-    private DataSource dataSource;
-    
-    @Override
-    public void init() throws ServletException{
-    	
-    	super.init();
-    	
-    	try {
-    		studentDbUtil = new StudentDbUtil(dataSource);
-    	}catch(Exception exc) {
-    		throw new ServletException();
-    	}
-    	
-    }
-    
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	private StudentDbUtil studentDbUtil;
+	@Resource(name="jdbc/web_student_tracker")
+	private DataSource dataSource;
+	
+	public void init() throws ServletException{
+		super.init();
+		//create student db util ..and pass int the conn pool / dataSource
 		try {
-			listStudents(request, response);
-		}catch(Exception e) {
-			throw new ServletException();
-			
+			studentDbUtil=new StudentDbUtil(dataSource);
+		}catch(Exception exe){
+		  throw new ServletException(exe);
 		}
 	}
-
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		try {
+			listStudents(request,response);
+		}catch(Exception e) {
+			throw new ServletException();
+		}
+	}
 	private void listStudents(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		// TODO Auto-generated method stub
-		List<Student> students = studentDbUtil.getStudents();
-		
+		//get student from db util
+		List<Student> students=studentDbUtil.getStudents();
+		//add student to the request
 		request.setAttribute("STUDENT_LIST", students);
-		
-	    RequestDispatcher dispatcher = request.getRequestDispatcher("/list-student.jsp");
-	    dispatcher.forward(request, response);
+		//send to JSP page view
+		RequestDispatcher dispatcher=request.getRequestDispatcher("/list-student.jsp");
+		dispatcher.forward(request, response);
 		
 	}
 

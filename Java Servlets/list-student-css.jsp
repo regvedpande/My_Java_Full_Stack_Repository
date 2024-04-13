@@ -1,4 +1,4 @@
-<%@page import="java.util.List,com.mkpits.jdbc.Student"%>
+<%@page import="java.util.List,com.mkpits.jdbc1.Student_Model"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
@@ -7,10 +7,11 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Student Tracker App</title>
+<link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <%
 //get the student the RequestDispatcher
-List<Student> theStudents = (List<Student>) request.getAttribute("STUDENT_LIST");
+List<Student_Model> theStudents = (List<Student_Model>) request.getAttribute("STUDENT_LIST");
 %>
 <body>
 	<div id="wrapper">
@@ -27,20 +28,18 @@ List<Student> theStudents = (List<Student>) request.getAttribute("STUDENT_LIST")
 					<th>First Name</th>
 					<th>Last Name</th>
 					<th>Email</th>
+					<th>Action</th>
 				</tr>
-				<%
-				for (Student tempStudent : theStudents) {
-				%>
-				<tr>
-					<td><%=tempStudent.getId()%></td>
-					<td><%=tempStudent.getFirstName()%></td>
-					<td><%=tempStudent.getLastName()%></td>
-					<td><%=tempStudent.getEmail()%></td>
+				<c:forEach var="tempStudent" items="${STUDENT_LIST}">
+				
+                <tr>
+				<td>${tempStudent.id}</td>
+					<td>${tempStudent.firstName}</td>
+					<td>${tempStudent.lastName}</td>
+					<td>${tempStudent.email}</td>
+					  
 				</tr>
-				<%
-				}
-				%>
-
+				</c:forEach>
 			</table>
 		</div>
 	</div>
