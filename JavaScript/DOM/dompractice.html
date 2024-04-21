@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-container {
+            height: 90px;
+            width: 400px;
+            background-color: rgb(227, 73, 12);
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .boxes {
+            height: 60px;
+            width: 50px;
+            background-color: aliceblue;
+            margin-top: 10px;
+            border: 2px solid green;
+        }
+
+        .boxi {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <div id="one" class="boxes">Box 1</div>
+        <div class="boxes">Box 2</div>
+        <div class="boxes">Box 3</div>
+    </div>
+
+    <script>
+        let access = document.body;
+        console.log(access);
+
+        let another = document.getElementById("one");
+        another.innerHTML = "Con";
+        another.style.backgroundColor = "blue";
+        console.log(another);
+
+        let another2 = document.querySelectorAll(".boxes");
+        another2.forEach(box => box.classList.add("boxi"));
+        console.log(another2);
+
+        let all = document.querySelector(".box-container .boxes");
+        console.log(all);
+
+        let insert = document.createElement("h1");
+        insert.innerText = "Regved";
+
+        let contain = document.querySelector(".box-container");
+        contain.appendChild(insert);
+    </script>
+</body>
+</html>
