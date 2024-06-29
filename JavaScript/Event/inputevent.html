@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Event Example</title>
+</head>
+<body>
+    <input type="text" id="myInput" placeholder="Type something...">
+    <p id="display"></p>
+
+    <script>
+        document.getElementById('myInput').addEventListener('input', function() {
+            document.getElementById('display').textContent = this.value;
+        });
+    </script>
+</body>
+</html>
