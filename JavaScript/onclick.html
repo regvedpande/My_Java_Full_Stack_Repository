@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id = "para">Click me</p>
+<script>
+        document.getElementById("para").onclick = function()
+        {
+            fun();
+        };
+        
+        function fun() {
+            document.getElementById("para").innerHTML = "Welcome to the Cylsys";
+            document.getElementById("para").style.color = "white";
+            document.getElementById("para").style.backgroundColor = "blue";
+            document.getElementById("para").style.fontSize = "25px";
+            document.getElementById("para").style.border = "4px solid black";
+        }
+</script>
+</body>
+</html>

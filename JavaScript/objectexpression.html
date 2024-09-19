@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object Expression</title>
+</head>
+<body>
+    <p id="getinfo"></p>
+
+    <script>
+        let news = {
+            device: "Apple",
+            type: "Macbook",
+            price: "2 Lakh"
+        };
+
+        let a = "device";
+        let b = "type";
+        let c = "price";
+        document.getElementById('getinfo').innerHTML = news[a] + " just released the new " + news[b] + " worth " + news[c];
+    </script>
+</body>
+</html>

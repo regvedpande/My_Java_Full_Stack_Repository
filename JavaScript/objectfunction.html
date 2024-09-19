@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object Methods</title>
+</head>
+<body>
+    <p id="getinfo"></p>
+
+    <script>
+        let smartphones = {
+            device1: "Apple",
+            device2: "Samsung",
+            device3 : "Pixel",
+            devices : function(){
+                return this.device1 + " " + this.device2 + " " + this.device3 + " " + "are best Smartphones";
+            }
+        };
+
+        document.getElementById('getinfo').innerHTML = smartphones.devices();
+    </script>
+</body>
+</html>

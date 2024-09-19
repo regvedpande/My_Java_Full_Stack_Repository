@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object Constructors</title>
+</head>
+<body>
+    <p id="getinfo"></p>
+
+    <script>
+        function Space(planet1, planet2, planet3, planet4) {
+            this.firstplanet = planet1;
+            this.secondplanet = planet2;
+            this.thirdplanet = planet3;
+            this.fourthplanet = planet4;
+        }
+
+        const getplanet = new Space("Mercury", "Earth", "Mars", "Saturn");
+        
+        document.getElementById("getinfo").innerHTML = "Planet with the Rings is called : " + getplanet.fourthplanet;
+
+    </script>
+</body>
+</html>
