@@ -1,2 +1,1 @@
-
-// console.log(calculator(5, 20));
+f details["age", "name"]);
