@@ -14,5 +14,5 @@ function maxOccurringChar(str) {
     return maxChar;
 }
 
-console.log(maxOccurringChar("Hello World")); // Output: l
-console.log(maxOccurringChar("javascript")); // Output: a
+console.log(maxOccurringChar("Hello World"));
+console.log(maxOccurringChar("javascript"));
