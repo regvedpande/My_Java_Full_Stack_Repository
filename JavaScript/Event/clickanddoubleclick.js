@@ -20,7 +20,7 @@ let btn = document.addEventListener("click", () =>{
 if(background == "light"){
     background = "dark";
     document.querySelector("body").style.backgroundColor = "grey";
-}else{
+}else {
     background="light";
     document.querySelector("body").style.backgroundColor = "white";
 }
