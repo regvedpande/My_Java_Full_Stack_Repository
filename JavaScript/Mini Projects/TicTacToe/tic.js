@@ -62,10 +62,10 @@ const checkWinner = () => {
 for(let pattern of winPatterns){
     let pos1Val = boxes[pattern[0]].textContent;
     let pos2Val = boxes[pattern[1]].textContent;
-    let pos3Val = boxes[pattern[2]].textContent; // Changed from pattern[3] to pattern[2]
+    let pos3Val = boxes[pattern[2]].textContent;
 
     if(pos1Val === pos2Val && pos2Val === pos3Val && pos1Val !== ""){
-        console.log("winner", pos1Val); // This will now correctly log "winner"
+        console.log("winner", pos1Val);
         showWinner(pos1Val);
     }
 }
