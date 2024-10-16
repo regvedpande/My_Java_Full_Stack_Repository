@@ -1,32 +1,30 @@
-let random = {
+class Random {
     regveddetails() {
         console.log("Regved Pande");
-    },
-    age : function(){
+    }
+    age() {
         console.log("24");
-    },
-
-    carname(brand){
+    }
+    carname(brand) {
         this.brandname = brand;
-        },
+    }
 }
+
+const random = new Random();
 
 random.regveddetails();
 random.age();
 
 let moreregveddetails = {
-    name : "Name is ",
-}
+    name: "Name is ",
+};
 
-moreregveddetails.__proto__ = random;
+Object.setPrototypeOf(moreregveddetails, Random.prototype);
 
 console.log(moreregveddetails.name);
-console.log(moreregveddetails.age());
-console.log(moreregveddetails.regveddetails());
+moreregveddetails.age();
+moreregveddetails.regveddetails();
 
-let ayush = new random();
+let ayush = new Random();
 ayush.carname("BMW");
 console.log(ayush.brandname);
-
-
-
