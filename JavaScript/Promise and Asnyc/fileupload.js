@@ -15,6 +15,4 @@ async function uploadFile(fileName) {
       console.error(error);
     }
   }
-  
   main();
-  
