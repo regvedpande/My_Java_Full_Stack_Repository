@@ -17,7 +17,7 @@ public class nonstaticpractice {
         System.out.println("Text: " + text);
     }
 
-    // Non-static method that modifies instance variables
+
     public void updateValues(int newNumber, String newText) {
         this.number = newNumber;
         this.text = newText;
