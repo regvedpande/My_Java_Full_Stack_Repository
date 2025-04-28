@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Events Example</title>
+<style>
+  #myButton {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #output {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+  <h1>JavaScript Events</h1>
+
+  <button id="myButton">Click Me!</button>
+
+  <p id="output"></p>
+
+  <input type="text" id="myInput" placeholder="Type something...">
+
+  <div id="mouseArea" style="width: 200px; height: 100px; border: 1px solid black; margin-top: 20px;">
+    Move your mouse here.
+  </div>
+
+  <script>
+    // Example 1: Click event
+    document.getElementById("myButton").addEventListener("click", function() {
+      document.getElementById("output").innerHTML = "Button clicked!";
+      this.style.backgroundColor = "blue"; // Change button color
+    });
+
+    // Example 2: Input change event
+    document.getElementById("myInput").addEventListener("input", function() {
+      document.getElementById("output").innerHTML = "Input changed: " + this.value;
+    });
+
+    // Example 3: Mouse move event
+    document.getElementById("mouseArea").addEventListener("mousemove", function(event) {
+      const x = event.clientX;
+      const y = event.clientY;
+      this.innerHTML = "Mouse X: " + x + ", Mouse Y: " + y;
+    });
+
+    // Example 4: Load event
+    window.addEventListener('load', (event) => {
+        console.log('Page is fully loaded');
+    });
+
+    //Example 5: keydown event.
+    document.addEventListener('keydown', (event) => {
+        console.log('Key pressed:' + event.key);
+    });
+
+  </script>
+
+</body>
+</html>
