@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX with JSON Example</title>
+    <script>
+        // JavaScript to handle AJAX requests
+        function fetchJsonData() {
+            // Create an XMLHttpRequest object
+            const xhr = new XMLHttpRequest();
+
+            // Define what happens when a response is received
+            xhr.onload = function () {
+                if (xhr.status === 200) { // HTTP status 200 means success
+                    // Parse the JSON response
+                    const data = JSON.parse(xhr.responseText);
+
+                    // Build and display the result dynamically
+                    let resultHtml = `<h2>Post Details:</h2>`;
+                    resultHtml += `<p><strong>Title:</strong> ${data.title}</p>`;
+                    resultHtml += `<p><strong>Body:</strong> ${data.body}</p>`;
+                    resultHtml += `<p><strong>User ID:</strong> ${data.userId}</p>`;
+
+                    document.getElementById("result").innerHTML = resultHtml;
+                } else {
+                    console.error("Failed to fetch JSON data:", xhr.statusText);
+                }
+            };
+
+            // Define what happens in case of an error
+            xhr.onerror = function () {
+                console.error("Request failed.");
+            };
+
+            // Configure the request (GET method and target URL)
+            xhr.open("GET", "https://jsonplaceholder.typicode.com/posts/1");
+
+            // Send the request
+            xhr.send();
+        }
+    </script>
+</head>
+<body>
+    <h1>AJAX with JSON Example</h1>
+    <button onclick="fetchJsonData()">Fetch JSON Data</button>
+    <div id="result">
+        <!-- JSON data from the server will be displayed here -->
+    </div>
+</body>
+</html>
